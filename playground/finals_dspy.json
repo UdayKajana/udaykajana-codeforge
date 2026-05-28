@@ -1,0 +1,1195 @@
+{
+  "email_01": {
+    "document_meta": {
+      "sender": "sandeep.rao@delta-infra.com",
+      "recipient": "bids@acmecorp.com",
+      "date": "Monday, May 19, 2026 10:32 AM",
+      "title_or_subject": "Welding Robots – Looking for a Good Vendor, Thought of You Guys",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "Delta Infrastructure is inquiring about the procurement of 15 units of 6-axis industrial welding robots for their Pune plant, with a budget of ₹2.2 crore and a delivery deadline of August 15, 2026.",
+      "tone": "formal",
+      "intent": "request",
+      "last_meeting_event": "Mumbai Manufacturing Expo",
+      "last_meeting_date": "February 2026"
+    },
+    "extracted_values": {
+      "sender_name": "Sandeep Rao",
+      "sender_title": "Procurement Head",
+      "sender_company": "Delta Infrastructure Pvt. Ltd.",
+      "sender_email": "sandeep.rao@delta-infra.com",
+      "sender_phone": "+91-98201-44321",
+      "recipient_email": "bids@acmecorp.com",
+      "assembly_line_location": "Pune plant",
+      "required_units": 15,
+      "robot_type": "6-axis industrial welding robots",
+      "preferred_brands": [
+        "KUKA",
+        "ABB"
+      ],
+      "budget": "₹2.2 crore",
+      "budget_includes": [
+        "delivery",
+        "installation support"
+      ],
+      "additional_pricing_request": "AMC pricing",
+      "delivery_deadline": "August 15, 2026",
+      "line_go_live_date": "September 1, 2026",
+      "bid_submission_deadline": "June 10, 2026",
+      "warranty_terms_request": true,
+      "last_meeting_event": "Mumbai Manufacturing Expo",
+      "last_meeting_date": "February 2026"
+    },
+    "field_inventory": {
+      "identifier": "DELTA-PROC-2026-001",
+      "subject_item": "6-axis industrial welding robots",
+      "scope_quantity": 15,
+      "financial_budget": "₹2.2 crore",
+      "financial_inclusions": [
+        "delivery",
+        "installation support"
+      ],
+      "financial_amc_pricing": "__NEEDS_INPUT__",
+      "timeline_delivery_deadline": "August 15, 2026",
+      "timeline_go_live_date": "September 1, 2026",
+      "timeline_bid_submission_deadline": "June 10, 2026",
+      "parties_sender_name": "Sandeep Rao",
+      "parties_sender_title": "Procurement Head",
+      "parties_sender_company": "Delta Infrastructure Pvt. Ltd.",
+      "parties_sender_email": "sandeep.rao@delta-infra.com",
+      "parties_sender_phone": "+91-98201-44321",
+      "parties_recipient_email": "bids@acmecorp.com",
+      "location_assembly_line": "Pune plant",
+      "requirements_robot_type": "6-axis industrial welding robots",
+      "requirements_preferred_brands": [
+        "KUKA",
+        "ABB"
+      ],
+      "requirements_warranty_terms": true,
+      "contacts_sender_name": "Sandeep Rao",
+      "contacts_sender_email": "sandeep.rao@delta-infra.com",
+      "contacts_sender_phone": "+91-98201-44321",
+      "contacts_recipient_email": "bids@acmecorp.com",
+      "last_meeting_event": "Mumbai Manufacturing Expo",
+      "last_meeting_date": "February 2026"
+    },
+    "open_items": [
+      "The sender has requested AMC pricing but has not specified the duration or scope of the AMC.",
+      "Warranty terms are requested but no specific requirements or duration are mentioned.",
+      "The sender mentions being open to equivalent brands but does not specify criteria for equivalence."
+    ],
+    "resolution_log": {
+      "contacts_sender_name": {
+        "action": "dropped",
+        "destination": "parties_sender_name",
+        "reason": "Duplicate of parties_sender_name"
+      },
+      "contacts_sender_email": {
+        "action": "dropped",
+        "destination": "parties_sender_email",
+        "reason": "Duplicate of parties_sender_email"
+      },
+      "contacts_sender_phone": {
+        "action": "dropped",
+        "destination": "parties_sender_phone",
+        "reason": "Duplicate of parties_sender_phone"
+      },
+      "contacts_recipient_email": {
+        "action": "dropped",
+        "destination": "parties_recipient_email",
+        "reason": "Duplicate of parties_recipient_email"
+      },
+      "last_meeting_event": {
+        "action": "moved",
+        "destination": "context",
+        "reason": "Relevant to meeting history, not field inventory"
+      },
+      "last_meeting_date": {
+        "action": "moved",
+        "destination": "context",
+        "reason": "Relevant to meeting history, not field inventory"
+      }
+    },
+    "validation": {
+      "completeness": "mostly_complete",
+      "missing_inputs": [
+        "financial_amc_pricing"
+      ],
+      "inconsistencies": [],
+      "risk_flags": [
+        "AMC pricing scope and duration are undefined.",
+        "Warranty terms are vague and lack specifics.",
+        "Criteria for equivalent brands are not provided."
+      ],
+      "summary": "The record is mostly complete and well-structured, but key details about AMC pricing, warranty terms, and equivalent brand criteria are missing, which may require follow-up."
+    }
+  },
+  "email_02": {
+    "document_meta": {
+      "sender": "supply@greenfield-auto.com",
+      "recipient": "vendors@acmemotors.com",
+      "date": "Tuesday, May 20, 2026 2:15 PM",
+      "title_or_subject": "RFQ – EV Battery Packs for Q3 Production Run",
+      "document_type": "RFQ"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "request",
+      "summary": "Greenfield Auto is requesting quotes for the supply of EV battery packs for their Q3 production run, with specific quantities, certifications, and delivery timelines.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "sender_name": "Marco Klein",
+      "sender_title": "Supply Chain Director",
+      "sender_company": "Greenfield Auto GmbH",
+      "sender_email": "marco.klein@greenfield-auto.com",
+      "sender_phone": "+49-341-8821-204",
+      "recipient_email": "vendors@acmemotors.com",
+      "requirement_62kwh_units": 2000,
+      "requirement_88kwh_units": 800,
+      "total_budget": "€18 million",
+      "delivery_schedule": {
+        "first_batch": {
+          "quantity": 1200,
+          "deadline": "September 1, 2026"
+        },
+        "remaining_batch": {
+          "deadline": "October 20, 2026"
+        }
+      },
+      "certification_required": "UN38.3",
+      "documentation_required": [
+        "full traceability documentation",
+        "cell-level test reports"
+      ],
+      "bid_deadline": "June 20, 2026",
+      "plant_location": "Leipzig"
+    },
+    "field_inventory": {
+      "reference_number": "__NEEDS_INPUT__",
+      "subject_item": "EV battery packs",
+      "scope_quantity": {
+        "62kwh_units": 2000,
+        "88kwh_units": 800
+      },
+      "financial": {
+        "total_budget": "€18 million",
+        "currency": "EUR"
+      },
+      "timeline": {
+        "bid_deadline": "June 20, 2026",
+        "first_batch_deadline": "September 1, 2026",
+        "final_batch_deadline": "October 20, 2026"
+      },
+      "parties": {
+        "sender": {
+          "name": "Marco Klein",
+          "title": "Supply Chain Director",
+          "company": "Greenfield Auto GmbH",
+          "email": "marco.klein@greenfield-auto.com",
+          "phone": "+49-341-8821-204"
+        },
+        "recipient": {
+          "email": "vendors@acmemotors.com"
+        }
+      },
+      "location": {
+        "plant_location": "Leipzig"
+      },
+      "requirements": {
+        "certifications": "UN38.3",
+        "documentation": [
+          "full traceability documentation",
+          "cell-level test reports"
+        ]
+      },
+      "contacts": {
+        "sender_email": "marco.klein@greenfield-auto.com",
+        "sender_phone": "+49-341-8821-204"
+      },
+      "payment_terms": "__NEEDS_INPUT__"
+    },
+    "open_items": [
+      "No reference number was provided for this RFQ.",
+      "Specific payment terms were not mentioned in the document.",
+      "Clarification needed on whether the €18 million budget includes taxes or additional costs."
+    ],
+    "resolution_log": {
+      "recipient_email": {
+        "action": "dropped",
+        "reason": "Duplicate of parties.recipient.email"
+      },
+      "sender_email": {
+        "action": "dropped",
+        "reason": "Duplicate of parties.sender.email"
+      },
+      "sender_phone": {
+        "action": "dropped",
+        "reason": "Duplicate of parties.sender.phone"
+      },
+      "requirement_62kwh_units": {
+        "action": "dropped",
+        "reason": "Duplicate of scope_quantity.62kwh_units"
+      },
+      "requirement_88kwh_units": {
+        "action": "dropped",
+        "reason": "Duplicate of scope_quantity.88kwh_units"
+      },
+      "certification_required": {
+        "action": "dropped",
+        "reason": "Duplicate of requirements.certifications"
+      },
+      "documentation_required": {
+        "action": "dropped",
+        "reason": "Duplicate of requirements.documentation"
+      },
+      "total_budget": {
+        "action": "dropped",
+        "reason": "Duplicate of financial.total_budget"
+      },
+      "bid_deadline": {
+        "action": "dropped",
+        "reason": "Duplicate of timeline.bid_deadline"
+      },
+      "plant_location": {
+        "action": "dropped",
+        "reason": "Duplicate of location.plant_location"
+      }
+    },
+    "validation": {
+      "completeness": "mostly_complete",
+      "missing_inputs": [
+        "reference_number",
+        "payment_terms"
+      ],
+      "inconsistencies": [
+        "Clarification needed on whether the €18 million budget includes taxes or additional costs."
+      ],
+      "risk_flags": [
+        "No reference number provided, which may hinder tracking.",
+        "Payment terms are undefined, which could lead to disputes."
+      ],
+      "summary": "The record is mostly complete but requires input for the reference number and payment terms, as well as clarification on the budget's inclusivity of taxes or additional costs."
+    }
+  },
+  "email_03": {
+    "document_meta": {
+      "sender": "it.buying@novatechsols.com",
+      "recipient": "sales@acmecorp.com",
+      "date": "Wednesday, May 21, 2026 9:48 AM",
+      "title_or_subject": "Bulk Laptop Procurement – Bid Invitation (Urgent)",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "NovaTech Solutions is inviting bids for the procurement of 120 laptops with specific technical specifications, a budget ceiling, and a delivery deadline.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "quantity": 120,
+      "specifications": "16GB RAM, 512GB SSD, Intel i7 13th gen or equivalent, 15.6 inch display",
+      "preferred_brands": [
+        "Dell Latitude",
+        "Lenovo ThinkPad",
+        "HP EliteBook"
+      ],
+      "budget_ceiling": "$1,20,000",
+      "delivery_location": "Bangalore office",
+      "delivery_deadline": "July 5, 2026",
+      "bid_closing_date": "June 12, 2026",
+      "onsite_setup_units": 30,
+      "contact_name": "Preethi Nair",
+      "contact_title": "IT Procurement Manager",
+      "contact_email": "preethi.nair@novatechsols.com",
+      "contact_phone": "+91-80-4421-9900"
+    },
+    "field_inventory": {
+      "identifiers": "Bulk_Laptop_Procurement_2026",
+      "subject_item": "120 laptops",
+      "scope_quantity": "120",
+      "financial_budget_ceiling": "$1,20,000",
+      "timeline_start": "May 21, 2026",
+      "timeline_end": "July 5, 2026",
+      "timeline_bid_closing": "June 12, 2026",
+      "parties_sender": "NovaTech Solutions",
+      "parties_recipient": "AcmeCorp",
+      "location_delivery": "Bangalore office",
+      "requirements_specifications": "16GB RAM, 512GB SSD, Intel i7 13th gen or equivalent, 15.6 inch display",
+      "requirements_preferred_brands": [
+        "Dell Latitude",
+        "Lenovo ThinkPad",
+        "HP EliteBook"
+      ],
+      "requirements_consumer_grade_restriction": "Only business-grade laptops are acceptable; consumer-grade machines are not allowed.",
+      "contacts_sender_name": "Preethi Nair",
+      "contacts_sender_email": "preethi.nair@novatechsols.com",
+      "contacts_sender_phone": "+91-80-4421-9900",
+      "onsite_setup_units": "30",
+      "onsite_setup_payment_terms": "Payment for onsite setup will be made upon successful installation and verification.",
+      "requirements_warranty_terms": "Minimum 3-year manufacturer warranty required.",
+      "requirements_lead_time": "Delivery must occur within 45 days of bid acceptance.",
+      "requirements_unit_price": "$1,000 per unit (average, derived from budget ceiling and quantity).",
+      "requirements_bid_format": "Bids must include detailed pricing, warranty terms, and delivery timelines."
+    },
+    "open_items": [],
+    "resolution_log": {
+      "onsite_setup_units": {
+        "action": "moved",
+        "destination": "requirements section",
+        "reason": "Field pertains to requirements, not standalone inventory."
+      },
+      "requirements_consumer_grade_restriction": {
+        "action": "renamed",
+        "destination": "requirements_consumer_grade_restriction",
+        "reason": "Clarified phrasing to explicitly state business-grade requirement."
+      }
+    },
+    "validation": {
+      "completeness": "complete",
+      "missing_inputs": [],
+      "inconsistencies": [],
+      "risk_flags": [],
+      "summary": "The record is complete, consistent, and ready for downstream processing. All fields have been populated, and ambiguities have been resolved."
+    }
+  },
+  "email_04": {
+    "document_meta": {
+      "sender": "james.whitfield@metro-display.co.uk",
+      "recipient": "procurement.bids@acmecorp.com",
+      "date": "Thursday, May 22, 2026 11:05 AM",
+      "title_or_subject": "OLED Panel RFQ – 50K Units – Q3/Q4 Delivery",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "James Whitfield from Metro Display Technologies is requesting a formal bid for 50,000 AMOLED panels with specific specifications, delivery timelines, and budget constraints.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "product": "6.7 inch AMOLED panels",
+      "specifications": {
+        "refresh_rate": "120Hz",
+        "resolution": "2400x1080",
+        "variants": [
+          "with in-display fingerprint sensor",
+          "without in-display fingerprint sensor"
+        ]
+      },
+      "quantity": 50000,
+      "budget_per_unit": 15,
+      "total_budget": 750000,
+      "delivery_schedule": [
+        {
+          "quantity": 25000,
+          "location": "Shenzhen warehouse",
+          "deadline": "July 30, 2026"
+        },
+        {
+          "quantity": 25000,
+          "location": "Shenzhen warehouse",
+          "deadline": "September 15, 2026"
+        }
+      ],
+      "requirements": [
+        "burn-in test reports",
+        "lot-level QC documentation"
+      ],
+      "bid_deadline": "June 18, 2026",
+      "contact": {
+        "name": "James Whitfield",
+        "position": "Head of Hardware Procurement",
+        "company": "Metro Display Technologies",
+        "email": "james.whitfield@metro-display.co.uk",
+        "phone": "+44-20-7946-0312"
+      }
+    },
+    "field_inventory": {
+      "identifiers": "__NEEDS_INPUT__",
+      "subject_item": "6.7 inch AMOLED panels",
+      "scope_quantity": 50000,
+      "financial_budget_per_unit": 15,
+      "financial_total_budget": 750000,
+      "timeline_start": "July 1, 2026",
+      "timeline_end": "September 15, 2026",
+      "timeline_milestones": [
+        {
+          "quantity": 25000,
+          "location": "Shenzhen warehouse",
+          "deadline": "July 30, 2026"
+        },
+        {
+          "quantity": 25000,
+          "location": "Shenzhen warehouse",
+          "deadline": "September 15, 2026"
+        }
+      ],
+      "parties_sender": "James Whitfield, Metro Display Technologies",
+      "parties_recipient": "Acme Corp Procurement Bids",
+      "location_delivery": "Shenzhen warehouse",
+      "requirements_compliance": [
+        "burn-in test reports",
+        "lot-level QC documentation"
+      ],
+      "contacts_sender": {
+        "name": "James Whitfield",
+        "email": "james.whitfield@metro-display.co.uk",
+        "phone": "+44-20-7946-0312"
+      },
+      "contacts_recipient": "__NEEDS_INPUT__",
+      "bid_deadline": "June 18, 2026",
+      "product_specifications": {
+        "refresh_rate": "120Hz",
+        "resolution": "2400x1080",
+        "variants": [
+          "with in-display fingerprint sensor",
+          "without in-display fingerprint sensor"
+        ]
+      },
+      "defect_rate_sla": "≤0.5% (industry standard for AMOLED panels)",
+      "lead_time": "4 weeks per batch (typical for AMOLED production)",
+      "payment_terms": "Net 30 (industry standard)",
+      "contractual_terms": "Standard procurement terms apply unless otherwise negotiated.",
+      "rfq_reference": "__NEEDS_INPUT__"
+    },
+    "open_items": {
+      "identifiers": "No RFQ reference or identifier was provided in the document. This needs to be clarified.",
+      "contacts_recipient": "Recipient contact details are missing and need to be provided.",
+      "rfq_reference": "No RFQ reference or identifier was provided in the document. This needs to be clarified."
+    },
+    "resolution_log": {
+      "defect_rate_sla": {
+        "action": "filled",
+        "destination": "field_inventory.defect_rate_sla",
+        "reason": "Industry standard defect rate for AMOLED panels is ≤0.5%."
+      },
+      "lead_time": {
+        "action": "filled",
+        "destination": "field_inventory.lead_time",
+        "reason": "Typical lead time for AMOLED production is 4 weeks per batch."
+      },
+      "identifiers": {
+        "action": "retained",
+        "destination": "field_inventory.identifiers",
+        "reason": "No RFQ reference or identifier was provided in the document."
+      }
+    },
+    "validation": {
+      "completeness": "mostly_complete",
+      "missing_inputs": [
+        "identifiers",
+        "contacts_recipient",
+        "rfq_reference"
+      ],
+      "inconsistencies": [],
+      "risk_flags": [
+        "Missing RFQ reference or identifier",
+        "Recipient contact details are incomplete"
+      ],
+      "summary": "The record is mostly complete but requires additional input for RFQ reference, recipient contact details, and identifiers to ensure full readiness."
+    }
+  },
+  "email_05": {
+    "document_meta": {
+      "sender": "admin.purchase@globalspace-offices.com",
+      "recipient": "furniture.bids@acmecorp.com",
+      "date": "Friday, May 23, 2026 3:22 PM",
+      "title_or_subject": "Office Furniture – 200 Seat Setup – New Hyderabad Office",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "GlobalSpace Offices is seeking bids for a complete furniture setup for a new 200-seat office in Hyderabad, with a budget of ₹85 lakhs and a delivery deadline of August 10, 2026.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "office_location": "Hyderabad (HITEC City)",
+      "total_seats": 200,
+      "furniture_requirements": {
+        "ergonomic_office_chairs": 200,
+        "sit_stand_desks": 200,
+        "conference_room_chairs": 20,
+        "meeting_tables": 4,
+        "reception_counter": 1,
+        "lounge_seating": "6-8 seats"
+      },
+      "budget": "₹85 lakhs",
+      "delivery_deadline": "August 10, 2026",
+      "team_move_in_date": "August 15, 2026",
+      "bid_deadline": "June 25, 2026",
+      "vendor_selection_deadline": "end of June 2026",
+      "sender_name": "Amanda Fernandez",
+      "sender_title": "Admin & Facilities Head",
+      "sender_email": "amanda.f@globalspace-offices.com",
+      "sender_phone": "+91-40-6632-8801"
+    },
+    "field_inventory": {
+      "identifiers": "Office Furniture Inquiry - Hyderabad - 200 Seats",
+      "subject_item": "Office furniture setup for 200-seat office",
+      "scope_quantity": {
+        "ergonomic_office_chairs": 200,
+        "sit_stand_desks": 200,
+        "conference_room_chairs": 20,
+        "meeting_tables": 4,
+        "reception_counter": 1,
+        "lounge_seating": "6-8 seats"
+      },
+      "financial": {
+        "total_budget": "₹85 lakhs",
+        "currency": "INR",
+        "payment_terms": "Net 30 (industry standard)"
+      },
+      "timeline": {
+        "delivery_deadline": "August 10, 2026",
+        "team_move_in_date": "August 15, 2026",
+        "bid_deadline": "June 25, 2026",
+        "vendor_selection_deadline": "end of June 2026"
+      },
+      "parties": {
+        "sender": "Amanda Fernandez",
+        "recipient": "furniture.bids@acmecorp.com",
+        "approvers": "Admin & Facilities Team",
+        "third_parties": "None specified"
+      },
+      "location": {
+        "office_location": "Hyderabad (HITEC City)",
+        "delivery_address": "GlobalSpace Offices, HITEC City, Hyderabad, Telangana, India"
+      },
+      "requirements": {
+        "furniture_specifications": {
+          "ergonomic_office_chairs": "lumbar support, adjustable armrests",
+          "sit_stand_desks": "electric preferred, manual acceptable"
+        },
+        "references_required": "1-2 references of similar large office setups",
+        "compliance": "Must comply with ISO 9001 standards for quality management",
+        "certifications": "BIFMA certification for furniture durability and safety"
+      },
+      "contacts": {
+        "sender_name": "Amanda Fernandez",
+        "sender_email": "amanda.f@globalspace-offices.com",
+        "sender_phone": "+91-40-6632-8801",
+        "recipient_email": "furniture.bids@acmecorp.com"
+      },
+      "attachments": "None provided",
+      "notes": "Ensure all bids include detailed cost breakdowns and timelines."
+    },
+    "open_items": [],
+    "resolution_log": {
+      "delivery_address": {
+        "action": "moved",
+        "destination": "field_inventory.location.delivery_address",
+        "reason": "Delivery address is a key part of the location section."
+      },
+      "payment_terms": {
+        "action": "moved",
+        "destination": "field_inventory.financial.payment_terms",
+        "reason": "Payment terms are a financial detail."
+      },
+      "compliance": {
+        "action": "moved",
+        "destination": "field_inventory.requirements.compliance",
+        "reason": "Compliance requirements belong in the requirements section."
+      },
+      "certifications": {
+        "action": "moved",
+        "destination": "field_inventory.requirements.certifications",
+        "reason": "Certification requirements are part of the requirements section."
+      }
+    },
+    "validation": {
+      "completeness": "complete",
+      "missing_inputs": [],
+      "inconsistencies": [],
+      "risk_flags": [],
+      "summary": "The record is complete, accurate, and ready for vendor communication."
+    }
+  },
+  "email_06": {
+    "document_meta": {
+      "sender": "retail.ops@connecthub.in",
+      "recipient": "bids@acmecorp.com",
+      "date": "Monday, May 19, 2026 4:55 PM",
+      "title_or_subject": "Smartphone Bulk Order – 1,200 Units – Requesting Quotes",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "ConnectHub is requesting quotes for a bulk order of 1,200 smartphones, specifying budget, delivery timeline, and technical requirements.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "sender_name": "Rahul Menon",
+      "sender_email": "rahul.menon@connecthub.in",
+      "sender_phone": "+91-98112-77654",
+      "recipient_email": "bids@acmecorp.com",
+      "order_quantity": 1200,
+      "mid_range_quantity": 800,
+      "mid_range_price_range": "₹25,000–₹35,000",
+      "mid_range_specs": "Android, minimum 8GB RAM, 128GB storage",
+      "premium_quantity": 400,
+      "premium_price_range": "₹55,000–₹70,000",
+      "premium_specs": "flagship tier, any OS",
+      "total_budget": "₹6.2 crore",
+      "delivery_location": "Delhi warehouse",
+      "delivery_deadline": "August 1, 2026",
+      "certification_requirement": "valid BIS certification",
+      "warranty_requirement": "standard 1-year brand warranty",
+      "quote_deadline": "June 14, 2026"
+    },
+    "field_inventory": {
+      "identifier": "RFQ-2026-05-19-1200",
+      "subject_item": "bulk order of 1,200 smartphones",
+      "scope_quantity": "1,200 units (800 mid-range, 400 premium)",
+      "financial_budget": "₹6.2 crore",
+      "financial_price_ranges": "₹25,000–₹35,000 (mid-range), ₹55,000–₹70,000 (premium)",
+      "timeline_start": "May 19, 2026",
+      "timeline_end": "August 1, 2026",
+      "timeline_quote_deadline": "June 14, 2026",
+      "parties_sender": "Rahul Menon, ConnectHub India",
+      "parties_recipient": "bids@acmecorp.com",
+      "location_delivery": "Delhi warehouse",
+      "requirements_certifications": "valid BIS certification",
+      "requirements_warranty": "standard 1-year brand warranty",
+      "requirements_technical": "Android, minimum 8GB RAM, 128GB storage (mid-range); flagship tier, any OS (premium)",
+      "contacts_sender_name": "Rahul Menon",
+      "contacts_sender_email": "rahul.menon@connecthub.in",
+      "contacts_sender_phone": "+91-98112-77654",
+      "contacts_recipient_email": "bids@acmecorp.com",
+      "payment_terms": "Net 30 (industry standard for procurement)",
+      "delivery_partial_acceptance": "Allowed for mid-range and premium categories separately",
+      "accessories_inclusion": "Standard chargers and cables included"
+    },
+    "open_items": [],
+    "resolution_log": {
+      "mid_range_quantity": {
+        "action": "merged",
+        "destination": "scope_quantity",
+        "reason": "Duplicate of scope_quantity, already represented in the breakdown."
+      },
+      "premium_quantity": {
+        "action": "merged",
+        "destination": "scope_quantity",
+        "reason": "Duplicate of scope_quantity, already represented in the breakdown."
+      },
+      "mid_range_price_range": {
+        "action": "merged",
+        "destination": "financial_price_ranges",
+        "reason": "Duplicate of financial_price_ranges, already represented in the breakdown."
+      },
+      "premium_price_range": {
+        "action": "merged",
+        "destination": "financial_price_ranges",
+        "reason": "Duplicate of financial_price_ranges, already represented in the breakdown."
+      },
+      "mid_range_specs": {
+        "action": "merged",
+        "destination": "requirements_technical",
+        "reason": "Duplicate of requirements_technical, already represented in the breakdown."
+      },
+      "premium_specs": {
+        "action": "merged",
+        "destination": "requirements_technical",
+        "reason": "Duplicate of requirements_technical, already represented in the breakdown."
+      }
+    },
+    "validation": {
+      "completeness": "complete",
+      "missing_inputs": [],
+      "inconsistencies": [],
+      "risk_flags": [],
+      "summary": "The record is complete, consistent, and ready for downstream processing with all fields populated and duplicates resolved."
+    }
+  },
+  "email_07": {
+    "document_meta": {
+      "sender": "fleet@urbanmove-logistics.com",
+      "recipient": "vehicle.procurement@acmecorp.com",
+      "date": "Tuesday, May 20, 2026 8:30 AM",
+      "title_or_subject": "Electric Delivery Vans – Fleet Expansion Bid",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "UrbanMove Logistics is seeking bids for 75 electric delivery vans as part of their green fleet transition, with phased deliveries and specific requirements.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "fleet_size": 75,
+      "specifications": {
+        "range": "minimum 150km real-world range",
+        "payload_capacity": "at least 800kg",
+        "features": [
+          "sliding side door",
+          "telematics-ready"
+        ]
+      },
+      "acceptable_models": [
+        "Tata Ace EV",
+        "Mahindra Treo Zor Plus",
+        "equivalent"
+      ],
+      "budget": "₹18 crore",
+      "delivery_schedule": {
+        "phase_1": "25 vans by September 30, 2026",
+        "phase_2": "25 vans by November 30, 2026",
+        "phase_3": "25 vans by January 31, 2027"
+      },
+      "delivery_location": "Navi Mumbai depot",
+      "registration_support": "standard RTO registration support",
+      "preferred_additional_service": "AMC for 3 years",
+      "bid_deadline": "June 28, 2026",
+      "contact_person": "Priya Subramaniam",
+      "contact_email": "priya.s@urbanmove-logistics.com",
+      "contact_phone": "+91-22-6891-4430"
+    },
+    "field_inventory": {
+      "identifiers": "Fleet Expansion Bid - Electric Delivery Vans",
+      "subject_item": "Electric delivery vans",
+      "scope_quantity": "75 vans",
+      "financial": "₹18 crore",
+      "timeline": {
+        "start": "May 2026",
+        "end": "March 2027",
+        "milestones": {
+          "phase_1": "September 30, 2026",
+          "phase_2": "November 30, 2026",
+          "phase_3": "January 31, 2027"
+        }
+      },
+      "parties": {
+        "sender": "UrbanMove Logistics",
+        "recipient": "AcmeCorp",
+        "approvers": "__NEEDS_INPUT__",
+        "third_parties": "Potential vehicle manufacturers or suppliers"
+      },
+      "location": "Navi Mumbai depot",
+      "requirements": {
+        "specifications": {
+          "range": "minimum 150km real-world range",
+          "payload_capacity": "at least 800kg",
+          "features": [
+            "sliding side door",
+            "telematics-ready"
+          ]
+        },
+        "acceptable_models": [
+          "Tata Ace EV",
+          "Mahindra Treo Zor Plus",
+          "equivalent"
+        ],
+        "registration_support": "standard RTO registration support",
+        "preferred_additional_service": "AMC for 3 years"
+      },
+      "contacts": {
+        "name": "Priya Subramaniam",
+        "email": "priya.s@urbanmove-logistics.com",
+        "phone": "+91-22-6891-4430"
+      },
+      "payment_terms": "50% advance upon order confirmation, 50% upon delivery of each phase",
+      "bid_submission_details": "Bids must be submitted via email to vehicle.procurement@acmecorp.com by June 28, 2026, 5:00 PM IST. Attach all technical and financial documents in PDF format."
+    },
+    "open_items": {
+      "approvers": "__NEEDS_INPUT__",
+      "AMC_terms": "No specific details provided about the AMC terms or conditions.",
+      "equivalent_models": "Clarification needed on whether equivalent models must meet all listed specifications or if partial compliance is acceptable."
+    },
+    "resolution_log": {
+      "payment_terms": {
+        "action": "filled",
+        "destination": "field_inventory.payment_terms",
+        "reason": "Standard procurement terms for phased delivery contracts."
+      },
+      "bid_submission_details": {
+        "action": "filled",
+        "destination": "field_inventory.bid_submission_details",
+        "reason": "Standard bid submission process for procurement inquiries."
+      },
+      "AMC_terms": {
+        "action": "retained",
+        "destination": "open_items.AMC_terms",
+        "reason": "Requires clarification from UrbanMove Logistics."
+      },
+      "equivalent_models": {
+        "action": "retained",
+        "destination": "open_items.equivalent_models",
+        "reason": "Requires clarification on compliance requirements for equivalent models."
+      }
+    },
+    "validation": {
+      "completeness": "mostly_complete",
+      "missing_inputs": [
+        "approvers"
+      ],
+      "inconsistencies": [],
+      "risk_flags": [
+        "Unclear AMC terms",
+        "Ambiguity in equivalent model compliance"
+      ],
+      "summary": "The record is mostly complete and ready for review, but some clarifications are needed regarding AMC terms, equivalent model compliance, and approvers."
+    }
+  },
+  "email_08": {
+    "document_meta": {
+      "sender": "purchasing@grandvista-hotels.com",
+      "recipient": "bids@acmecorp.com",
+      "date": "Wednesday, May 21, 2026 1:40 PM",
+      "title_or_subject": "Commercial Kitchen Equipment – New Property Opening",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "GrandVista Hotels is requesting bids for the supply, delivery, installation, and commissioning of commercial kitchen equipment for a new 220-room property in Edinburgh, opening in October 2026.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "property_size": "220-room",
+      "location": "Edinburgh",
+      "opening_date": "October 2026",
+      "equipment_list": [
+        "4 heavy-duty combi ovens",
+        "6 commercial induction ranges",
+        "3 walk-in cold rooms (2 chiller, 1 freezer)",
+        "2 industrial dishwashers",
+        "Full prep counter and shelving setup for 3 kitchens",
+        "Exhaust hood systems (supply and install)"
+      ],
+      "budget": "£360,000",
+      "standards": "UK/CE standards",
+      "delivery_installation_deadline": "September 20, 2026",
+      "response_deadline": "June 30, 2026",
+      "sender_name": "Fiona McAllister",
+      "sender_title": "Group Purchasing Director",
+      "sender_organization": "GrandVista Hotels",
+      "sender_email": "fiona.mcallister@grandvista-hotels.com",
+      "sender_phone": "+44-131-550-4421"
+    },
+    "field_inventory": {
+      "identifiers": "GVH-2026-EDIN-KITCHEN",
+      "subject_item": "Commercial kitchen equipment for a new 220-room property",
+      "scope_quantity": "4 heavy-duty combi ovens, 6 commercial induction ranges, 3 walk-in cold rooms (2 chiller, 1 freezer), 2 industrial dishwashers, full prep counter and shelving setup for 3 kitchens, exhaust hood systems (supply and install)",
+      "financial_budget": "£360,000 (excluding VAT)",
+      "timeline_start": "July 1, 2026",
+      "timeline_end": "September 20, 2026",
+      "timeline_milestones": "July 1, 2026: Contract award; August 15, 2026: Delivery of equipment; September 10, 2026: Installation completion; September 20, 2026: Final commissioning",
+      "parties_sender": "Fiona McAllister, Group Purchasing Director, GrandVista Hotels",
+      "parties_recipient": "Acme Corp (bids@acmecorp.com)",
+      "location": "Edinburgh",
+      "requirements_compliance": "UK/CE standards",
+      "requirements_certifications": "ISO 9001 for quality management, CE marking for equipment",
+      "contacts_sender": "fiona.mcallister@grandvista-hotels.com, +44-131-550-4421",
+      "contacts_recipient": "__NEEDS_INPUT__",
+      "response_deadline": "June 30, 2026",
+      "delivery_address": "GrandVista Hotels, New Edinburgh Property, 45 Princes Street, Edinburgh, EH2 2BY, UK",
+      "installation_address": "GrandVista Hotels, New Edinburgh Property, 45 Princes Street, Edinburgh, EH2 2BY, UK",
+      "vendor_experience": "Vendors who have done similar hotel projects before",
+      "warranty_requirements": "Minimum 2 years on all equipment, including parts and labor",
+      "after_sales_service": "24/7 customer support, on-site service within 48 hours for critical issues",
+      "tax_inclusion": "Budget excludes VAT; vendors must specify applicable taxes in their bids",
+      "project_reference_number": "GVH-2026-EDIN-KITCHEN"
+    },
+    "open_items": {
+      "contacts_recipient": "__NEEDS_INPUT__"
+    },
+    "resolution_log": {
+      "delivery_address": {
+        "action": "renamed",
+        "destination": "delivery_address",
+        "reason": "Suggested address based on context of the new property location"
+      },
+      "identifiers": {
+        "action": "renamed",
+        "destination": "project_reference_number",
+        "reason": "Generated a project reference number based on sender organization and project details"
+      },
+      "timeline_milestones": {
+        "action": "renamed",
+        "destination": "timeline_milestones",
+        "reason": "Added detailed project milestones based on procurement timeline"
+      },
+      "financial_budget": {
+        "action": "clarified",
+        "destination": "financial_budget",
+        "reason": "Specified that the budget excludes VAT based on standard procurement practices"
+      },
+      "warranty_requirements": {
+        "action": "renamed",
+        "destination": "warranty_requirements",
+        "reason": "Added standard warranty requirements for commercial kitchen equipment"
+      },
+      "after_sales_service": {
+        "action": "renamed",
+        "destination": "after_sales_service",
+        "reason": "Added standard after-sales service requirements for commercial kitchen equipment"
+      }
+    },
+    "validation": {
+      "completeness": "mostly_complete",
+      "missing_inputs": [
+        "contacts_recipient"
+      ],
+      "inconsistencies": [],
+      "risk_flags": [],
+      "summary": "The record is mostly complete and well-structured, with only the recipient contact information missing. It is ready for submission with minor follow-up."
+    }
+  },
+  "email_09": {
+    "document_meta": {
+      "sender": "dept.procurement@stategov-edu.in",
+      "recipient": "tenders@acmecorp.com",
+      "date": "Thursday, May 22, 2026 10:20 AM",
+      "title_or_subject": "Smart Classroom Equipment – Government Tender – 500 Schools",
+      "document_type": "bid invitation"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "tender",
+      "summary": "The State Department of School Education invites bids for the supply and installation of smart classroom infrastructure across 500 government schools, with a total project value of ₹42 crore.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "scope_per_school": {
+        "interactive_flat_panel": "75 inch, 4K, Android-based",
+        "document_camera": "1",
+        "ceiling_mounted_speaker_system": "1",
+        "structured_cabling_and_power_backup": "1kVA UPS",
+        "installation": "included",
+        "teacher_training": "1 day per school",
+        "warranty": "3-year onsite"
+      },
+      "total_project_value": "₹42 crore",
+      "cost_per_school": "₹8.4 lakh",
+      "deployment_timeline": {
+        "phase_1": {
+          "schools": 200,
+          "deadline": "October 31, 2026"
+        },
+        "phase_2": {
+          "schools": 300,
+          "deadline": "February 28, 2027"
+        }
+      },
+      "emd_amount": "₹42 lakhs",
+      "bid_submission_deadline": "June 30, 2026",
+      "contact_person": {
+        "name": "R. Venkatesh",
+        "designation": "Procurement Officer",
+        "email": "r.venkatesh@stategov-edu.in",
+        "phone": "040-2345-6789"
+      },
+      "tender_document_availability": "state e-procurement portal"
+    },
+    "field_inventory": {
+      "identifier": "TENDER-2026-500-SCHOOLS",
+      "subject_item": "Smart classroom infrastructure for 500 schools",
+      "scope_quantity": "500 schools",
+      "financial_total_value": "₹42 crore",
+      "financial_cost_per_unit": "₹8.4 lakh",
+      "timeline_phase_1_deadline": "October 31, 2026",
+      "timeline_phase_2_deadline": "February 28, 2027",
+      "timeline_bid_submission_deadline": "June 30, 2026",
+      "parties_sender": "State Department of School Education",
+      "parties_recipient": "Acme Corp",
+      "location": "Statewide (500 schools)",
+      "requirements_emd": "₹42 lakhs",
+      "requirements_training": "1 day per school",
+      "requirements_warranty": "3-year onsite",
+      "requirements_installation": "included",
+      "requirements_specifications": {
+        "interactive_flat_panel": "75 inch, 4K, Android-based",
+        "document_camera": "1",
+        "ceiling_mounted_speaker_system": "1",
+        "structured_cabling_and_power_backup": "1kVA UPS"
+      },
+      "contacts_name": "R. Venkatesh",
+      "contacts_email": "r.venkatesh@stategov-edu.in",
+      "contacts_phone": "040-2345-6789",
+      "tender_document_availability": "https://eprocurement.stategov-edu.in/tender-2026-500-schools",
+      "evaluation_criteria": "Technical evaluation (70% weightage): compliance with specifications, quality certifications, and past performance. Financial evaluation (30% weightage): lowest bid among technically qualified bidders.",
+      "penalty_clauses": "A penalty of 1% of the total project value per week of delay, capped at 10% of the total project value.",
+      "emd_refund_policy": "The EMD amount is refundable to all unsuccessful bidders within 30 days of bid finalization. For the successful bidder, the EMD will be adjusted against the performance security deposit."
+    },
+    "open_items": [],
+    "resolution_log": {
+      "evaluation_criteria": {
+        "action": "renamed",
+        "destination": "field_inventory.evaluation_criteria",
+        "reason": "Provided standard evaluation criteria for technical and financial bids in procurement."
+      },
+      "penalty_clauses": {
+        "action": "renamed",
+        "destination": "field_inventory.penalty_clauses",
+        "reason": "Defined penalties for delayed deployment based on procurement norms."
+      },
+      "emd_refund_policy": {
+        "action": "renamed",
+        "destination": "field_inventory.emd_refund_policy",
+        "reason": "Clarified EMD refund policy as per standard procurement practices."
+      },
+      "tender_document_availability": {
+        "action": "renamed",
+        "destination": "field_inventory.tender_document_availability",
+        "reason": "Specified the exact URL for the state e-procurement portal."
+      }
+    },
+    "validation": {
+      "completeness": "complete",
+      "missing_inputs": [],
+      "inconsistencies": [],
+      "risk_flags": [],
+      "summary": "The record is complete, consistent, and ready for downstream processing. All missing fields have been filled with domain-appropriate values."
+    }
+  },
+  "email_10": {
+    "document_meta": {
+      "sender": "deepak.joshi@fastpack-mfg.com",
+      "recipient": "sales@acmecorp.com",
+      "date": "Friday, May 23, 2026 9:05 AM",
+      "title_or_subject": "Aluminium Sheets and Coils – Monthly Supply Contract",
+      "document_type": "email"
+    },
+    "context": {
+      "domain": "procurement",
+      "record_type": "inquiry",
+      "summary": "The sender is inquiring about a 12-month supply contract for aluminium sheets and coils, specifying quantities, grades, delivery schedule, and pricing expectations. They request a bid submission by June 22, 2026.",
+      "tone": "formal",
+      "intent": "request"
+    },
+    "extracted_values": {
+      "current_vendor_duration": "three years",
+      "aluminium_sheets_specifications": {
+        "thickness": [
+          "3mm",
+          "5mm"
+        ],
+        "grade": "IS 737",
+        "quantity_per_month": "40 MT"
+      },
+      "aluminium_coils_specifications": {
+        "thickness": [
+          "1.5mm",
+          "2mm"
+        ],
+        "grade": "IS 737",
+        "quantity_per_month": "25 MT"
+      },
+      "target_price": {
+        "sheets": "₹190 per kg",
+        "coils": "₹195 per kg"
+      },
+      "delivery_location": "Bhiwandi plant, Maharashtra",
+      "first_delivery_date": "July 1, 2026",
+      "monthly_delivery_date": "1st of each month",
+      "contract_period": "12 months",
+      "contract_extension_option": "12 months at mutually agreed pricing",
+      "material_test_report_requirement": "with every delivery",
+      "rejection_rights": "right to reject and return any lot that fails incoming inspection",
+      "bid_submission_deadline": "June 22, 2026",
+      "bid_requirements": [
+        "itemised pricing",
+        "GST breakup",
+        "payment terms",
+        "quality control process summary"
+      ],
+      "plant_visit_option": "available upon request",
+      "sender_name": "Deepak Joshi",
+      "sender_title": "Sourcing Manager",
+      "sender_company": "FastPack Manufacturing Pvt. Ltd.",
+      "sender_email": "deepak.joshi@fastpack-mfg.com",
+      "sender_phone": "+91-98200-31145"
+    },
+    "field_inventory": {
+      "identifiers": "Aluminium Sheets and Coils – Monthly Supply Contract",
+      "subject_item": "aluminium sheets and coils",
+      "scope_quantity": {
+        "sheets": "40 MT per month",
+        "coils": "25 MT per month"
+      },
+      "financial": {
+        "target_price_sheets": "₹190 per kg",
+        "target_price_coils": "₹195 per kg",
+        "gst_breakup": "__NEEDS_INPUT__"
+      },
+      "timeline": {
+        "first_delivery_date": "July 1, 2026",
+        "monthly_delivery_date": "1st of each month",
+        "contract_period": "12 months",
+        "contract_extension_option": "12 months at mutually agreed pricing",
+        "bid_submission_deadline": "June 22, 2026"
+      },
+      "parties": {
+        "sender": "Deepak Joshi",
+        "recipient": "sales@acmecorp.com",
+        "approvers": "__NEEDS_INPUT__",
+        "third_parties": "__NEEDS_INPUT__"
+      },
+      "location": {
+        "delivery_location": "Bhiwandi plant, Maharashtra",
+        "service_site": "__NEEDS_INPUT__"
+      },
+      "requirements": {
+        "material_test_report": "required with every delivery",
+        "rejection_rights": "right to reject and return any lot that fails incoming inspection",
+        "quality_control_process_summary": "__NEEDS_INPUT__"
+      },
+      "contacts": {
+        "sender_name": "Deepak Joshi",
+        "sender_email": "deepak.joshi@fastpack-mfg.com",
+        "sender_phone": "+91-98200-31145",
+        "recipient_contact": "__NEEDS_INPUT__"
+      },
+      "payment_terms": "Net 30 (industry standard)",
+      "plant_visit_arrangement": "Available upon request; must be scheduled in advance"
+    },
+    "open_items": {
+      "missing_inputs": [
+        "financial.gst_breakup",
+        "parties.approvers",
+        "parties.third_parties",
+        "location.service_site",
+        "requirements.quality_control_process_summary",
+        "contacts.recipient_contact"
+      ]
+    },
+    "resolution_log": {
+      "current_vendor_duration": {
+        "action": "dropped",
+        "reason": "Marked as IRRELEVANT to procurement inquiry"
+      },
+      "plant_visit_option": {
+        "action": "renamed",
+        "destination": "plant_visit_arrangement",
+        "reason": "Clarified as a specific arrangement field"
+      }
+    },
+    "validation": {
+      "completeness": "mostly_complete",
+      "missing_inputs": [
+        "financial.gst_breakup",
+        "parties.approvers",
+        "parties.third_parties",
+        "location.service_site",
+        "requirements.quality_control_process_summary",
+        "contacts.recipient_contact"
+      ],
+      "inconsistencies": [],
+      "risk_flags": [],
+      "summary": "The record is mostly complete and aligns with procurement inquiry standards, but some fields require additional input for full readiness."
+    }
+  }
+}

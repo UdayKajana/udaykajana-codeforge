@@ -1,0 +1,103 @@
+{
+  "document_meta": {
+    "sender": "sandeep.rao@delta-infra.com",
+    "recipient": "bids@acmecorp.com",
+    "date": "Monday, May 19, 2026 10:32 AM",
+    "title_or_subject": "Welding Robots – Looking for a Good Vendor, Thought of You Guys",
+    "document_type": "email"
+  },
+  "context": {
+    "domain": "manufacturing",
+    "record_type": "rfq",
+    "summary": "The email requests a bid for 15 units of 6-axis industrial welding robots, including delivery, installation, and AMC pricing.",
+    "tone": "formal",
+    "intent": "request"
+  },
+  "extracted_values": {
+    "assembly_line_location": "Pune plant",
+    "quantity": "15 units",
+    "robot_type": "6-axis industrial welding robots",
+    "brands_evaluated": "KUKA and ABB",
+    "budget": "₹2.2 crore",
+    "delivery_deadline": "August 15, 2026",
+    "line_go_live_date": "September 1, 2026",
+    "bid_submission_deadline": "June 10, 2026",
+    "warranty_terms": "included",
+    "amc_pricing": "appreciated separately",
+    "contact_name": "Sandeep Rao",
+    "contact_position": "Procurement Head",
+    "contact_email": "sandeep.rao@delta-infra.com",
+    "contact_phone": "+91-98201-44321"
+  },
+  "field_inventory": {
+    "identifiers": {
+      "rfq_id": "__NEEDS_INPUT__",
+      "reference_number": "__NEEDS_INPUT__"
+    },
+    "subject_item": {
+      "item_description": "6-axis industrial welding robots",
+      "quantity": "15",
+      "brands_preferred": "KUKA and ABB",
+      "equivalent_brands_allowed": "yes"
+    },
+    "scope_quantity": {
+      "delivery_included": "yes",
+      "installation_included": "yes",
+      "amc_pricing": "appreciated separately"
+    },
+    "financial": {
+      "budget_total": "₹2.2 crore",
+      "currency": "INR",
+      "payment_terms": "__NEEDS_INPUT__"
+    },
+    "timeline": {
+      "delivery_deadline": "August 15, 2026",
+      "line_go_live_date": "September 1, 2026",
+      "bid_submission_deadline": "June 10, 2026"
+    },
+    "parties": {
+      "requesting_party": "Delta Infrastructure Pvt. Ltd.",
+      "contact_name": "Sandeep Rao",
+      "contact_position": "Procurement Head"
+    },
+    "location": {
+      "assembly_line_location": "Pune plant",
+      "delivery_location": "__NEEDS_INPUT__"
+    },
+    "requirements": {
+      "warranty_terms": "included",
+      "certifications_required": "__NEEDS_INPUT__",
+      "technical_specifications": "__NEEDS_INPUT__",
+      "delivery_support": "yes",
+      "installation_support": "yes"
+    },
+    "contacts": {
+      "contact_email": "sandeep.rao@delta-infra.com",
+      "contact_phone": "+91-98201-44321"
+    }
+  },
+  "open_items": [
+    "What are the specific technical specifications or certifications required for the welding robots?",
+    "Is there a preferred payment term or schedule?",
+    "What is the exact delivery location within the Pune plant?",
+    "Are there any specific requirements for the AMC terms?",
+    "Should the bid include a breakdown of costs for delivery, installation, and AMC separately?"
+  ],
+  "validation": {
+    "completeness": "incomplete",
+    "missing_inputs": [
+      "rfq_id",
+      "reference_number",
+      "payment_terms",
+      "delivery_location",
+      "certifications_required",
+      "technical_specifications"
+    ],
+    "inconsistencies": [],
+    "risk_flags": [
+      "Key fields like RFQ ID, reference number, and technical specifications are missing, which are critical for bid preparation.",
+      "Delivery location within the Pune plant is unspecified, which could lead to logistical issues."
+    ],
+    "summary": "The record is incomplete and requires input from the buyer for critical fields like RFQ ID, reference number, payment terms, delivery location, certifications, and technical specifications. It is not ready for processing."
+  }
+}
