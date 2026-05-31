@@ -1,1753 +1,240 @@
 {
-  "email_01": {
-    "email_meta": {
-      "from_address": "sandeep.rao@delta-infra.com",
-      "to_address": "bids@acmecorp.com",
-      "date_sent": "Monday, May 19, 2026 10:32 AM",
-      "subject": "Welding Robots – Looking for a Good Vendor, Thought of You Guys"
-    },
-    "context": {
-      "domain": "manufacturing",
-      "request_type": "rfq",
-      "summary": "Delta Infrastructure is requesting a quote for 15 units of 6-axis industrial welding robots for their Pune plant, with delivery and installation support included.",
-      "tone": "formal",
-      "relationship": "existing_vendor"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": "6-axis industrial welding robots",
-      "QUANTITIES": "15 units",
-      "FINANCIAL": "₹2.2 crore (total budget including delivery and installation support); AMC pricing requested separately",
-      "DATES": {
-        "order_date": null,
-        "delivery_date": "August 15, 2026",
-        "bid_deadline": "June 10, 2026",
-        "contract_period": null
+  "NO DSPY":"",
+  "document_meta": {
+    "sender": "Kenta Yamamoto [山本健太]",
+    "recipient": "bids@globalparts.com",
+    "date": "May 26, 2026, 10:32 AM",
+    "title_or_subject": "【Urgent】Procurement Request for 6-Axis Arc Welding Robots",
+    "document_type": "email"
+  },
+  "context": {
+    "domain": "procurement",
+    "record_type": "request_for_quote",
+    "summary": "Suzuki Sekkei Co., Ltd. is requesting a quote for 18 units of 6-axis arc welding robots for their Nagoya Plant No. 2 expansion, with detailed specifications, budget, and delivery schedule provided.",
+    "tone": "formal",
+    "intent": "request for quotation"
+  },
+  "extracted_values": {
+    "item_name": "6-axis arc welding robot",
+    "models": [
+      "FANUC Robot M-10iA/12",
+      "Yaskawa Electric Motoman MA1440",
+      "equivalent models acceptable"
+    ],
+    "quantity": 18,
+    "budget": "JPY 220,000,000 (excluding tax)",
+    "budget_inclusions": [
+      "delivery",
+      "installation"
+    ],
+    "budget_exclusions": [
+      "AMC costs (minimum 3-year contract)"
+    ],
+    "delivery_schedule": [
+      {
+        "batch": 1,
+        "quantity": 6,
+        "delivery_date": "September 15, 2026"
       },
-      "LOCATIONS": "Pune plant",
-      "CONTACTS": {
-        "sender_name": "Sandeep Rao",
-        "phone": "+91-98201-44321",
-        "email": "sandeep.rao@delta-infra.com",
-        "company_name": "Delta Infrastructure Pvt. Ltd.",
-        "department": "Procurement"
+      {
+        "batch": 2,
+        "quantity": 6,
+        "delivery_date": "November 30, 2026"
       },
-      "PREFERENCES": {
-        "brands": "KUKA, ABB, or equivalent",
-        "exclusions": null,
-        "certifications": null,
-        "standards": null
-      },
-      "TERMS": {
-        "payment_terms": null,
-        "milestones": null,
-        "phasing": null,
-        "warranty": "Warranty terms requested",
-        "other": null
-      },
-      "OTHER": null
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "6-axis industrial welding robots",
-      "item_description": "Industrial-grade 6-axis welding robots for automated welding tasks, including delivery and installation support.",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "15",
-      "unit_of_measure": "units",
-      "brand_preference": "KUKA, ABB, or equivalent",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "__NEEDS_SENDER_INPUT__",
-      "total_budget": "₹2.2 crore",
-      "currency": "INR",
-      "incoterms": "DDP (Delivered Duty Paid, standard for domestic procurement)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "__NEEDS_SENDER_INPUT__",
-      "discount_terms": "Negotiable",
-      "penalty_clause": "Applicable for late delivery (standard industry practice)",
-      "rfq_issue_date": "May 19, 2026",
-      "bid_submission_deadline": "June 10, 2026",
-      "delivery_date": "August 15, 2026",
-      "contract_start_date": "August 16, 2026",
-      "contract_end_date": "__NEEDS_SENDER_INPUT__",
-      "lead_time_days": "87 days (calculated from May 19, 2026 to August 15, 2026)",
-      "delivery_location": "Pune plant",
-      "shipping_method": "Road transport (common for domestic delivery)",
-      "packaging_requirements": "Standard industrial packaging to prevent damage during transit",
-      "freight_responsibility": "Supplier (as per DDP terms)",
-      "certifications_required": "ISO 9001 (standard for manufacturing equipment)",
-      "regulatory_standards": "CE marking (common for industrial robots)",
-      "country_of_origin": "__NEEDS_SENDER_INPUT__",
-      "quality_inspection_required": "Yes, pre-delivery inspection required",
-      "vendor_name": "Delta Infrastructure Pvt. Ltd.",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "Existing vendor",
-      "vendor_contact_name": "Sandeep Rao",
-      "vendor_contact_email": "sandeep.rao@delta-infra.com",
-      "past_relationship": "existing_vendor",
-      "evaluation_criteria": "Price, quality, lead time, and compliance with certifications",
-      "scoring_weights": "__NEEDS_SENDER_INPUT__",
-      "sample_required": "No",
-      "bid_bond_required": "No",
-      "bid_validity_days": "90 days (industry standard)",
-      "tooling_ownership": "Supplier-owned tooling",
-      "production_capacity_per_month": "__NEEDS_SENDER_INPUT__",
-      "first_article_inspection": "Yes, required before full production",
-      "change_management_process": "Supplier to notify buyer of any changes in design or production",
-      "sub_supplier_approval_required": "Yes, for critical components",
-      "force_majeure_clause": "Included (standard industry practice)",
-      "dispute_resolution_mechanism": "Arbitration under Indian law",
-      "governing_law": "Indian Contract Act, 1872",
-      "liquidated_damages": "Applicable for delays beyond agreed timelines"
-    },
-    "sender_notes": null,
-    "review_decisions": {
-      "os_preference": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "software_licenses_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "support_sla_hours": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "warranty_years": {
-        "action": "renamed_and_kept",
-        "destination": "warranty_duration",
-        "reason": "Rephrased to 'warranty_duration' for clarity and retained as it is relevant to the RFQ."
-      },
-      "asset_tagging_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "cybersecurity_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "data_residency_requirement": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "deployment_environment": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
-      },
-      "integration_requirements": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to manufacturing RFQ and not explicitly requested by sender."
+      {
+        "batch": 3,
+        "quantity": 6,
+        "delivery_date": "January 31, 2027"
       }
+    ],
+    "full_operation_date": "March 1, 2027",
+    "technical_specifications": {
+      "dust_water_protection": "IP67",
+      "repeatability": "±0.05mm or less",
+      "payload_capacity": "10kg or more (at maximum reach)",
+      "reach": "1,400mm or more",
+      "controller": "EtherNet/IP compatible (required for PLC connection)"
     },
-    "validation": {
-      "budget_feasibility": "feasible",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "model_number",
-        "unit_price",
-        "payment_schedule",
-        "contract_end_date",
-        "country_of_origin",
-        "vendor_registration_number",
-        "scoring_weights",
-        "production_capacity_per_month"
-      ],
-      "risk_flags": []
+    "compliance_standards": [
+      "Labor Safety and Health Act",
+      "JIS B 8433 (Industrial Robot Safety Standards)",
+      "ISO 10218-1 (Safety Requirements for Robots and Robotic Devices)"
+    ],
+    "bid_conditions": {
+      "submission_deadline": "June 20, 2026, 5:00 PM JST",
+      "required_inclusions": [
+        "warranty details and duration",
+        "FAT and SAT schedules",
+        "spare parts list and lead times"
+      ]
+    },
+    "contact_person": {
+      "name": "Kenta Yamamoto [山本健太]",
+      "position": "Head of Procurement",
+      "company": "Suzuki Sekkei Co., Ltd. [鈴木設計株式会社]",
+      "address": "3-18-1 Sakae, Naka-ku, Nagoya, Aichi 460-0008, Japan",
+      "phone": "052-432-8800 (ext. 312)",
+      "email": "yamamoto.kenta@suzuki-sekkei.co.jp"
     }
   },
-  "email_02": {
-    "email_meta": {
-      "from_address": "supply@greenfield-auto.com",
-      "to_address": "vendors@acmemotors.com",
-      "date_sent": "Tuesday, May 20, 2026 2:15 PM",
-      "subject": "RFQ – EV Battery Packs for Q3 Production Run"
+  "field_inventory": {
+    "identifiers": {
+      "rfq_id": "__NEEDS_INPUT__",
+      "reference_number": "__NEEDS_INPUT__"
     },
-    "context": {
-      "domain": "manufacturing",
-      "request_type": "rfq",
-      "summary": "Greenfield Auto is requesting quotes for the supply of EV battery packs for their Q3 production run at the Leipzig plant.",
-      "tone": "formal",
-      "relationship": "existing_vendor"
+    "subject_item": {
+      "item_name": "6-axis arc welding robot",
+      "models": [
+        "FANUC Robot M-10iA/12",
+        "Yaskawa Electric Motoman MA1440",
+        "equivalent models acceptable"
+      ]
     },
-    "extracted_values": {
-      "PRODUCT/SERVICE": [
-        "62 kWh LFP battery packs",
-        "88 kWh LFP battery packs"
+    "scope_quantity": {
+      "quantity": 18
+    },
+    "financial": {
+      "budget": "JPY 220,000,000",
+      "budget_inclusions": [
+        "delivery",
+        "installation"
       ],
-      "QUANTITIES": {
-        "62_kwh_battery_packs": 2000,
-        "88_kwh_battery_packs": 800
+      "budget_exclusions": [
+        "AMC costs (minimum 3-year contract)"
+      ]
+    },
+    "timeline": {
+      "delivery_schedule": [
+        {
+          "batch": 1,
+          "quantity": 6,
+          "delivery_date": "September 15, 2026"
+        },
+        {
+          "batch": 2,
+          "quantity": 6,
+          "delivery_date": "November 30, 2026"
+        },
+        {
+          "batch": 3,
+          "quantity": 6,
+          "delivery_date": "January 31, 2027"
+        }
+      ],
+      "full_operation_date": "March 1, 2027",
+      "submission_deadline": "June 20, 2026, 5:00 PM JST"
+    },
+    "parties": {
+      "requesting_party": {
+        "name": "Suzuki Sekkei Co., Ltd. [鈴木設計株式会社]",
+        "contact_person": "Kenta Yamamoto [山本健太]",
+        "position": "Head of Procurement",
+        "address": "3-18-1 Sakae, Naka-ku, Nagoya, Aichi 460-0008, Japan",
+        "phone": "052-432-8800 (ext. 312)",
+        "email": "yamamoto.kenta@suzuki-sekkei.co.jp"
       },
-      "FINANCIAL": {
-        "total_budget": "€18 million"
+      "responding_party": {
+        "name": "__NEEDS_INPUT__",
+        "contact_person": "__NEEDS_INPUT__",
+        "position": "__NEEDS_INPUT__",
+        "address": "__NEEDS_INPUT__",
+        "phone": "__NEEDS_INPUT__",
+        "email": "__NEEDS_INPUT__"
+      }
+    },
+    "location": {
+      "delivery_location": "Nagoya Plant No. 2",
+      "installation_location": "Nagoya Plant No. 2"
+    },
+    "requirements": {
+      "technical_specifications": {
+        "dust_water_protection": "IP67",
+        "repeatability": "±0.05mm or less",
+        "payload_capacity": "10kg or more (at maximum reach)",
+        "reach": "1,400mm or more",
+        "controller": "EtherNet/IP compatible (required for PLC connection)"
       },
-      "DATES": {
-        "bid_deadline": "June 20, 2026",
-        "first_delivery_date": "September 1, 2026",
-        "final_delivery_date": "October 20, 2026"
-      },
-      "LOCATIONS": {
-        "delivery_location": "Leipzig plant"
-      },
-      "CONTACTS": {
-        "sender_name": "Marco Klein",
-        "sender_email": "marco.klein@greenfield-auto.com",
-        "sender_phone": "+49-341-8821-204",
-        "company_name": "Greenfield Auto GmbH",
-        "department": "Supply Chain"
-      },
-      "PREFERENCES": {
-        "certifications": "UN38.3",
-        "documentation": [
-          "full traceability documentation",
-          "cell-level test reports"
+      "compliance_standards": [
+        "Labor Safety and Health Act",
+        "JIS B 8433 (Industrial Robot Safety Standards)",
+        "ISO 10218-1 (Safety Requirements for Robots and Robotic Devices)"
+      ],
+      "bid_conditions": {
+        "required_inclusions": [
+          "warranty details and duration",
+          "FAT and SAT schedules",
+          "spare parts list and lead times"
         ]
-      },
-      "TERMS": {
-        "staggered_delivery": "first 1,200 units by September 1, 2026 and the balance by October 20, 2026"
-      },
-      "OTHER": null
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "62 kWh LFP battery packs, 88 kWh LFP battery packs",
-      "item_description": "Supply of 62 kWh and 88 kWh LFP battery packs for EV production",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "2000 units of 62 kWh, 800 units of 88 kWh",
-      "unit_of_measure": "units",
-      "brand_preference": "No specific brand preference",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "__NEEDS_SENDER_INPUT__",
-      "total_budget": "€18 million",
-      "currency": "EUR",
-      "incoterms": "DDP (Delivered Duty Paid)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "50% on delivery, 50% after inspection",
-      "discount_terms": "Negotiable based on volume",
-      "penalty_clause": "1% of total contract value per week of delay",
-      "rfq_issue_date": "May 20, 2026",
-      "bid_submission_deadline": "June 20, 2026",
-      "delivery_date": "First 1,200 units by September 1, 2026, balance by October 20, 2026",
-      "contract_start_date": "July 1, 2026",
-      "contract_end_date": "October 31, 2026",
-      "lead_time_days": "90 days (based on delivery timeline)",
-      "delivery_location": "Leipzig plant",
-      "shipping_method": "Road transport (assumed for domestic delivery)",
-      "packaging_requirements": "Standard export packaging with protective measures for batteries",
-      "freight_responsibility": "Supplier",
-      "certifications_required": "UN38.3",
-      "regulatory_standards": "EU Battery Directive compliance",
-      "country_of_origin": "__NEEDS_SENDER_INPUT__",
-      "quality_inspection_required": "Yes, pre-shipment and on-site inspection",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "Battery supplier",
-      "vendor_contact_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_email": "__NEEDS_SENDER_INPUT__",
-      "past_relationship": "Existing vendor relationship",
-      "evaluation_criteria": "Price, quality, lead time, certifications",
-      "scoring_weights": "Price: 40%, Quality: 30%, Lead Time: 20%, Certifications: 10%",
-      "sample_required": "Yes, sample submission required before contract award",
-      "bid_bond_required": "No",
-      "bid_validity_days": "90 days (industry standard)",
-      "force_majeure_clause": "Included as per standard terms",
-      "dispute_resolution_mechanism": "Arbitration under ICC rules",
-      "governing_law": "German law",
-      "liquidated_damages": "Applicable for delays beyond agreed timeline",
-      "production_capacity_per_month": "__NEEDS_SENDER_INPUT__",
-      "tooling_ownership": "Supplier-owned tooling",
-      "first_article_inspection": "Required before mass production",
-      "change_management_process": "Supplier to notify buyer of any changes in design or process",
-      "sub_supplier_approval_required": "Yes, prior approval required for sub-suppliers"
-    },
-    "sender_notes": null,
-    "review_decisions": {
-      "vehicle_type": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "payload_capacity_kg": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "range_km": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "charging_infrastructure_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "fleet_size": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "fuel_type": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "emission_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "driver_training_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "telematics_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "maintenance_contract_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction"
-      },
-      "material_grade": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "No specific meaning could be assigned"
-      },
-      "chemical_composition": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "No specific meaning could be assigned"
-      },
-      "mtr_required": {
-        "action": "renamed_and_kept",
-        "destination": "material_test_report_required",
-        "reason": "Rephrased to clarify meaning"
-      },
-      "rejection_tolerance_percent": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "No specific meaning could be assigned"
-      },
-      "batch_size": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "No specific meaning could be assigned"
-      },
-      "shelf_life": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "No specific meaning could be assigned"
       }
     },
-    "validation": {
-      "budget_feasibility": "feasible",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "unit_price",
-        "country_of_origin",
-        "vendor_name",
-        "vendor_registration_number",
-        "vendor_contact_name",
-        "vendor_contact_email",
-        "production_capacity_per_month"
-      ],
-      "risk_flags": []
+    "contacts": {
+      "primary_contact": {
+        "name": "Kenta Yamamoto [山本健太]",
+        "position": "Head of Procurement",
+        "company": "Suzuki Sekkei Co., Ltd. [鈴木設計株式会社]",
+        "address": "3-18-1 Sakae, Naka-ku, Nagoya, Aichi 460-0008, Japan",
+        "phone": "052-432-8800 (ext. 312)",
+        "email": "yamamoto.kenta@suzuki-sekkei.co.jp"
+      },
+      "secondary_contact": {
+        "name": "__NEEDS_INPUT__",
+        "position": "__NEEDS_INPUT__",
+        "company": "__NEEDS_INPUT__",
+        "address": "__NEEDS_INPUT__",
+        "phone": "__NEEDS_INPUT__",
+        "email": "__NEEDS_INPUT__"
+      }
     }
   },
-  "email_03": {
-    "email_meta": {
-      "from_address": "it.buying@novatechsols.com",
-      "to_address": "sales@acmecorp.com",
-      "date_sent": "Wednesday, May 21, 2026 9:48 AM",
-      "subject": "Bulk Laptop Procurement – Bid Invitation (Urgent)"
+  "open_items": [
+    "RFQ ID or reference number is not provided.",
+    "Clarification needed on whether equivalent models require pre-approval."
+  ],
+  "resolution_log": {
+    "RFQ ID or reference number is not provided.": {
+      "action": "escalated",
+      "outcome": "RFQ ID and reference number remain as '__NEEDS_INPUT__'.",
+      "reason": "These identifiers are typically assigned internally by the requesting organization and cannot be derived from the provided data."
     },
-    "context": {
-      "domain": "IT",
-      "request_type": "rfq",
-      "summary": "NovaTech Solutions is requesting a quote for 120 laptops with specific specifications and delivery by July 5, 2026, along with optional onsite setup for 30 units.",
-      "tone": "urgent",
-      "relationship": "existing_vendor"
+    "Delivery and installation location is assumed to be Nagoya Plant No. 2 but not explicitly confirmed.": {
+      "action": "resolved",
+      "outcome": "Nagoya Plant No. 2 confirmed as both delivery and installation location.",
+      "reason": "The context and extracted values explicitly mention Nagoya Plant No. 2 as the expansion site."
     },
-    "extracted_values": {
-      "PRODUCT/SERVICE": "120 laptops, minimum 16GB RAM, 512GB SSD, Intel i7 13th gen or equivalent, 15.6 inch display",
-      "QUANTITIES": "120 units",
-      "FINANCIAL": "Ceiling budget of $1,20,000 for the full batch",
-      "DATES": {
-        "order_date": null,
-        "delivery_date": "July 5, 2026",
-        "bid_deadline": "June 12, 2026",
-        "contract_period": null
-      },
-      "LOCATIONS": "Bangalore office",
-      "CONTACTS": {
-        "sender_name": "Preethi Nair",
-        "phone": "+91-80-4421-9900",
-        "email": "preethi.nair@novatechsols.com",
-        "company_name": "NovaTech Solutions",
-        "department": "IT Procurement"
-      },
-      "PREFERENCES": {
-        "brands": "Dell Latitude, Lenovo ThinkPad, HP EliteBook",
-        "exclusions": "No consumer-grade machines"
-      },
-      "TERMS": {
-        "payment_terms": null,
-        "warranty": "Requested but unspecified",
-        "onsite_setup": "Optional for 30 units, paid separately"
-      },
-      "OTHER": null
+    "No details provided for the responding party (supplier).": {
+      "action": "escalated",
+      "outcome": "Responding party details remain as '__NEEDS_INPUT__'.",
+      "reason": "Supplier details are not provided in the email and cannot be inferred."
     },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "laptops",
-      "item_description": "120 laptops, minimum 16GB RAM, 512GB SSD, Intel i7 13th gen or equivalent, 15.6 inch display",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "120",
-      "unit_of_measure": "units",
-      "brand_preference": "Dell Latitude, Lenovo ThinkPad, HP EliteBook",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "1,000 (derived: $120,000 ÷ 120 units)",
-      "total_budget": "1,20,000",
-      "currency": "USD",
-      "incoterms": "DDP (domestic delivery standard)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "__NEEDS_SENDER_INPUT__",
-      "discount_terms": "__NEEDS_SENDER_INPUT__",
-      "penalty_clause": "__NEEDS_SENDER_INPUT__",
-      "rfq_issue_date": "May 21, 2026 (email date)",
-      "bid_submission_deadline": "June 12, 2026",
-      "delivery_date": "July 5, 2026",
-      "contract_start_date": "July 6, 2026 (day after delivery date)",
-      "contract_end_date": "__NEEDS_SENDER_INPUT__",
-      "lead_time_days": "45 (derived: July 5, 2026 - May 21, 2026)",
-      "delivery_location": "Bangalore office",
-      "shipping_method": "__NEEDS_SENDER_INPUT__",
-      "packaging_requirements": "__NEEDS_SENDER_INPUT__",
-      "freight_responsibility": "Vendor (assumed for DDP)",
-      "certifications_required": "ISO 9001 (standard for IT hardware)",
-      "regulatory_standards": "__NEEDS_SENDER_INPUT__",
-      "country_of_origin": "__NEEDS_SENDER_INPUT__",
-      "quality_inspection_required": "Yes (standard for IT hardware)",
-      "vendor_name": "NovaTech Solutions",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "IT Hardware Supplier",
-      "vendor_contact_name": "Preethi Nair",
-      "vendor_contact_email": "preethi.nair@novatechsols.com",
-      "past_relationship": "Yes, previous delivery in 2024",
-      "evaluation_criteria": "__NEEDS_SENDER_INPUT__",
-      "scoring_weights": "__NEEDS_SENDER_INPUT__",
-      "sample_required": "No (not mentioned in RFQ)",
-      "bid_bond_required": "No (not mentioned in RFQ)",
-      "bid_validity_days": "90 (industry standard)",
-      "os_preference": "Windows 11 Pro (assumed standard for business laptops)",
-      "software_licenses_included": "__NEEDS_SENDER_INPUT__",
-      "support_sla_hours": "24/7 (industry standard for IT hardware)",
-      "warranty_years": "1 (standard for IT hardware)",
-      "asset_tagging_required": "Yes (common for corporate IT procurement)",
-      "cybersecurity_standard": "ISO 27001 (standard for IT security)",
-      "data_residency_requirement": "__NEEDS_SENDER_INPUT__",
-      "deployment_environment": "__NEEDS_SENDER_INPUT__",
-      "integration_requirements": "__NEEDS_SENDER_INPUT__",
-      "escrow_arrangement": "No (not applicable for hardware procurement)",
-      "source_code_access": "No (not applicable for hardware procurement)",
-      "uptime_sla_percent": "__NEEDS_SENDER_INPUT__",
-      "disaster_recovery_rto_rpo": "__NEEDS_SENDER_INPUT__",
-      "vendor_lock_in_risk": "Low (multiple brands specified)",
-      "force_majeure_clause": "Yes (standard in contracts)",
-      "dispute_resolution_mechanism": "Arbitration (standard for international contracts)",
-      "governing_law": "Indian Contract Act, 1872 (assumed based on location)",
-      "liquidated_damages": "__NEEDS_SENDER_INPUT__"
-    },
-    "sender_notes": [
-      "The sender appreciated the vendor's previous delivery in 2024 for being smooth and on time.",
-      "The sender requested warranty terms but did not specify details.",
-      "The sender mentioned optional onsite setup for 30 units, to be paid separately."
+    "Clarification needed on whether equivalent models require pre-approval.": {
+      "action": "escalated",
+      "outcome": "Equivalent model pre-approval status remains unclear.",
+      "reason": "The email does not specify whether equivalent models require pre-approval, and this must be clarified with the requesting party."
+    }
+  },
+  "validation": {
+    "completeness": "mostly_complete",
+    "missing_inputs": [
+      "rfq_id",
+      "reference_number",
+      "responding_party.name",
+      "responding_party.contact_person",
+      "responding_party.position",
+      "responding_party.address",
+      "responding_party.phone",
+      "responding_party.email",
+      "secondary_contact.name",
+      "secondary_contact.position",
+      "secondary_contact.company",
+      "secondary_contact.address",
+      "secondary_contact.phone",
+      "secondary_contact.email"
     ],
-    "review_decisions": {
-      "OTHER": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "No specific meaning could be assigned to 'OTHER', and it was not explicitly requested by the sender."
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible (120 laptops at $1,000 each aligns with the $120,000 budget ceiling)",
-      "timeline_assessment": "realistic (45 days lead time is sufficient for standard IT hardware procurement and delivery)",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "model_number",
-        "payment_schedule",
-        "discount_terms",
-        "penalty_clause",
-        "contract_end_date",
-        "shipping_method",
-        "packaging_requirements",
-        "regulatory_standards",
-        "country_of_origin",
-        "vendor_registration_number",
-        "evaluation_criteria",
-        "scoring_weights",
-        "software_licenses_included",
-        "data_residency_requirement",
-        "deployment_environment",
-        "integration_requirements",
-        "uptime_sla_percent",
-        "disaster_recovery_rto_rpo",
-        "liquidated_damages"
-      ],
-      "risk_flags": [
-        "Missing compliance requirements (e.g., regulatory standards, certifications)",
-        "Potential budget/quantity mismatch if unit price exceeds $1,000",
-        "Unspecified warranty terms could lead to post-purchase disputes"
-      ]
-    }
-  },
-  "email_04": {
-    "email_meta": {
-      "from_address": "james.whitfield@metro-display.co.uk",
-      "to_address": "procurement.bids@acmecorp.com",
-      "date_sent": "Thursday, May 22, 2026 11:05 AM",
-      "subject": "OLED Panel RFQ – 50K Units – Q3/Q4 Delivery"
-    },
-    "context": {
-      "domain": "manufacturing",
-      "request_type": "rfq",
-      "summary": "Metro Display Technologies is requesting a quote for 50,000 AMOLED panels with specific specifications, to be delivered in two lots by specified dates.",
-      "tone": "formal",
-      "relationship": "existing_vendor"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": "6.7 inch AMOLED panels — 120Hz, 2400x1080 resolution, with and without in-display fingerprint sensor",
-      "QUANTITIES": "50,000 units total (25,000 units per lot)",
-      "FINANCIAL": "Max budget $15 per unit, total not to exceed $750,000",
-      "DATES": {
-        "bid_deadline": "June 18, 2026",
-        "delivery_lot_1": "July 30, 2026",
-        "delivery_lot_2": "September 15, 2026"
-      },
-      "LOCATIONS": "Shenzhen warehouse",
-      "CONTACTS": {
-        "name": "James Whitfield",
-        "email": "james.whitfield@metro-display.co.uk",
-        "phone": "+44-20-7946-0312",
-        "company": "Metro Display Technologies",
-        "department": "Head of Hardware Procurement"
-      },
-      "PREFERENCES": "Burn-in test reports and lot-level QC documentation required with each shipment",
-      "TERMS": "Include per-unit pricing for both variants, lead time, and defect rate SLA",
-      "OTHER": null
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "6.7 inch AMOLED panels",
-      "item_description": "120Hz, 2400x1080 resolution, with and without in-display fingerprint sensor",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "50,000",
-      "unit_of_measure": "units",
-      "brand_preference": "__NEEDS_SENDER_INPUT__",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "15 (max budget per unit)",
-      "total_budget": "750,000",
-      "currency": "USD",
-      "incoterms": "DDP (industry standard for domestic delivery to Shenzhen warehouse)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "__NEEDS_SENDER_INPUT__",
-      "discount_terms": "__NEEDS_SENDER_INPUT__",
-      "penalty_clause": "__NEEDS_SENDER_INPUT__",
-      "rfq_issue_date": "May 22, 2026 (email date)",
-      "bid_submission_deadline": "June 18, 2026",
-      "delivery_date": "September 15, 2026 (final lot delivery date)",
-      "contract_start_date": "May 22, 2026 (assumed RFQ issue date)",
-      "contract_end_date": "September 15, 2026 (final lot delivery date)",
-      "lead_time_days": "69 days (July 30, 2026 - May 22, 2026 for Lot 1)",
-      "delivery_location": "Shenzhen warehouse",
-      "shipping_method": "__NEEDS_SENDER_INPUT__",
-      "packaging_requirements": "__NEEDS_SENDER_INPUT__",
-      "certifications_required": "ISO 9001 (industry standard for manufacturing quality)",
-      "regulatory_standards": "__NEEDS_SENDER_INPUT__",
-      "country_of_origin": "__NEEDS_SENDER_INPUT__",
-      "quality_inspection_required": "Burn-in test reports and lot-level QC documentation",
-      "vendor_name": "Metro Display Technologies",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "Existing vendor",
-      "vendor_contact_name": "James Whitfield",
-      "vendor_contact_email": "james.whitfield@metro-display.co.uk",
-      "past_relationship": "Yes (existing vendor relationship)",
-      "evaluation_criteria": "Per-unit pricing for both variants, lead time, defect rate SLA",
-      "scoring_weights": "__NEEDS_SENDER_INPUT__",
-      "sample_required": "Yes (implied by quality inspection requirements)",
-      "bid_bond_required": "No (not mentioned in RFQ)",
-      "bid_validity_days": "90 (industry standard)",
-      "tooling_ownership": "Vendor-owned (industry standard unless specified otherwise)",
-      "production_capacity_per_month": "__NEEDS_SENDER_INPUT__",
-      "first_article_inspection": "Yes (implied by burn-in test requirement)",
-      "change_management_process": "__NEEDS_SENDER_INPUT__",
-      "sub_supplier_approval_required": "No (not mentioned in RFQ)"
-    },
-    "sender_notes": [],
-    "review_decisions": {
-      "os_preference": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "software_licenses_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "support_sla_hours": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "warranty_years": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "asset_tagging_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "cybersecurity_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "data_residency_requirement": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "deployment_environment": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      },
-      "integration_requirements": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to manufacturing RFQ as per instruction."
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible (Max budget of $750,000 aligns with $15 per unit for 50,000 units.)",
-      "timeline_assessment": "realistic (Lead time of 69 days for Lot 1 and 116 days for Lot 2 is achievable for manufacturing and delivery.)",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "brand_preference",
-        "model_number",
-        "payment_schedule",
-        "discount_terms",
-        "penalty_clause",
-        "shipping_method",
-        "packaging_requirements",
-        "regulatory_standards",
-        "country_of_origin",
-        "vendor_registration_number",
-        "scoring_weights",
-        "production_capacity_per_month",
-        "change_management_process"
-      ],
-      "risk_flags": []
-    }
-  },
-  "email_05": {
-    "email_meta": {
-      "from_address": "admin.purchase@globalspace-offices.com",
-      "to_address": "furniture.bids@acmecorp.com",
-      "date_sent": "Friday, May 23, 2026 3:22 PM",
-      "subject": "Office Furniture – 200 Seat Setup – New Hyderabad Office"
-    },
-    "context": {
-      "domain": "retail",
-      "request_type": "rfq",
-      "summary": "The sender is requesting bids for a complete office furniture setup for a 200-seat office in Hyderabad, including chairs, desks, meeting tables, and lounge furniture, with a total budget of ₹85 lakhs.",
-      "tone": "formal",
-      "relationship": "unknown"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": [
-        "200 ergonomic office chairs (lumbar support, adjustable armrests)",
-        "200 sit-stand desks (electric preferred, manual acceptable)",
-        "20 conference room chairs",
-        "4 large meeting tables",
-        "Reception counter and lounge seating (6-8 seats)"
-      ],
-      "QUANTITIES": [
-        "200 ergonomic office chairs",
-        "200 sit-stand desks",
-        "20 conference room chairs",
-        "4 large meeting tables",
-        "6-8 lounge seats"
-      ],
-      "FINANCIAL": {
-        "total_budget": "₹85 lakhs",
-        "currency": "INR"
-      },
-      "DATES": {
-        "bid_deadline": "June 25, 2026",
-        "delivery_date": "August 10, 2026"
-      },
-      "LOCATIONS": {
-        "delivery_address": "Hyderabad (HITEC City)"
-      },
-      "CONTACTS": {
-        "sender_name": "Amanda Fernandez",
-        "phone": "+91-40-6632-8801",
-        "email": "amanda.f@globalspace-offices.com",
-        "company_name": "GlobalSpace Offices",
-        "department": "Admin & Facilities"
-      },
-      "PREFERENCES": {
-        "references_required": "1-2 references for similar large office setups",
-        "desk_type": "electric preferred, manual acceptable"
-      },
-      "TERMS": {
-        "delivery_and_installation_included": true
-      },
-      "OTHER": {
-        "team_move_in_date": "August 15, 2026"
-      }
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "Office Furniture Setup",
-      "item_description": "Complete office furniture setup for a 200-seat office, including ergonomic chairs, sit-stand desks, meeting tables, and lounge furniture.",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "200 chairs, 200 desks, 20 conference chairs, 4 meeting tables, 6-8 lounge seats",
-      "unit_of_measure": "units",
-      "brand_preference": "No specific brand preference mentioned",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "__NEEDS_SENDER_INPUT__",
-      "total_budget": "₹85 lakhs",
-      "currency": "INR",
-      "incoterms": "DDP (Delivery Duty Paid, common for domestic procurement)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "50% advance, 50% upon delivery and installation (assumed standard for large orders)",
-      "discount_terms": "Negotiable based on volume",
-      "penalty_clause": "1% of total value per week of delay (industry standard)",
-      "rfq_issue_date": "May 23, 2026",
-      "bid_submission_deadline": "June 25, 2026",
-      "delivery_date": "August 10, 2026",
-      "contract_start_date": "August 11, 2026",
-      "contract_end_date": "August 10, 2027 (1-year post-installation warranty assumed)",
-      "lead_time_days": "47 days (calculated from bid deadline to delivery date)",
-      "delivery_location": "Hyderabad (HITEC City)",
-      "shipping_method": "Road transport (assumed for domestic delivery)",
-      "packaging_requirements": "Standard protective packaging to prevent damage during transit",
-      "certifications_required": "ISO 9001 (quality management standard for manufacturing)",
-      "regulatory_standards": "BIS compliance for furniture safety (India-specific)",
-      "country_of_origin": "India (assumed for domestic procurement)",
-      "quality_inspection_required": "Yes, upon delivery",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "Furniture supplier",
-      "vendor_contact_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_email": "__NEEDS_SENDER_INPUT__",
-      "past_relationship": "No prior relationship mentioned",
-      "evaluation_criteria": "1-2 references for similar large office setups",
-      "scoring_weights": "Price: 40%, Quality: 30%, Delivery timeline: 20%, References: 10%",
-      "sample_required": "Yes, sample chair and desk required for evaluation",
-      "bid_bond_required": "No",
-      "bid_validity_days": "90 days (industry standard)",
-      "force_majeure_clause": "Included (industry standard)",
-      "dispute_resolution_mechanism": "Arbitration in Hyderabad (assumed standard)",
-      "governing_law": "Indian Contract Act, 1872",
-      "liquidated_damages": "1% of total value per week of delay (aligned with penalty clause)"
-    },
-    "sender_notes": {},
-    "review_decisions": {
-      "os_preference": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "software_licenses_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "support_sla_hours": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "warranty_years": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "asset_tagging_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "cybersecurity_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "data_residency_requirement": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "deployment_environment": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      },
-      "integration_requirements": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to retail RFQ as per instruction"
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "model_number",
-        "unit_price",
-        "vendor_name",
-        "vendor_registration_number",
-        "vendor_contact_name",
-        "vendor_contact_email"
-      ],
-      "risk_flags": []
-    }
-  },
-  "email_06": {
-    "email_meta": {
-      "from_address": "retail.ops@connecthub.in",
-      "to_address": "bids@acmecorp.com",
-      "date_sent": "Monday, May 19, 2026 4:55 PM",
-      "subject": "Smartphone Bulk Order – 1,200 Units – Requesting Quotes"
-    },
-    "context": {
-      "domain": "retail",
-      "request_type": "rfq",
-      "summary": "ConnectHub is requesting quotes for a bulk purchase of 1,200 smartphones for resale and corporate gifting programs, with specific requirements for mid-range and premium models.",
-      "tone": "formal",
-      "relationship": "unknown"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": [
-        {
-          "description": "800 smartphones in the ₹25,000–₹35,000 range, Android, minimum 8GB RAM, 128GB storage"
-        },
-        {
-          "description": "400 smartphones in the ₹55,000–₹70,000 range, flagship tier, any OS"
-        }
-      ],
-      "QUANTITIES": {
-        "total_units": 1200,
-        "mid_range_units": 800,
-        "premium_units": 400
-      },
-      "FINANCIAL": {
-        "total_budget": "₹6.2 crore",
-        "price_range_mid_range": "₹25,000–₹35,000",
-        "price_range_premium": "₹55,000–₹70,000"
-      },
-      "DATES": {
-        "delivery_date": "August 1, 2026",
-        "quote_deadline": "June 14, 2026"
-      },
-      "LOCATIONS": {
-        "delivery_address": "Delhi warehouse"
-      },
-      "CONTACTS": {
-        "sender_name": "Rahul Menon",
-        "phone": "+91-98112-77654",
-        "email": "rahul.menon@connecthub.in",
-        "company_name": "ConnectHub India",
-        "department": "Operations"
-      },
-      "PREFERENCES": {
-        "india_variant": true,
-        "bis_certification": true,
-        "warranty": "1-year brand warranty"
-      },
-      "TERMS": null,
-      "OTHER": null
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "Smartphones",
-      "item_description": "800 mid-range smartphones (₹25,000–₹35,000) and 400 premium smartphones (₹55,000–₹70,000)",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "1200",
-      "unit_of_measure": "units",
-      "brand_preference": "India variant preferred",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "__NEEDS_SENDER_INPUT__",
-      "total_budget": "₹6.2 crore",
-      "currency": "₹",
-      "incoterms": "DDP (Delivered Duty Paid)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "100% upon delivery",
-      "discount_terms": "Negotiable based on volume",
-      "penalty_clause": "1% of total value per week of delay",
-      "rfq_issue_date": "May 19, 2026",
-      "bid_submission_deadline": "June 14, 2026",
-      "delivery_date": "August 1, 2026",
-      "contract_start_date": "August 1, 2026",
-      "contract_end_date": "August 1, 2027",
-      "lead_time_days": "47 days (calculated from RFQ issue date to delivery date)",
-      "delivery_location": "Delhi warehouse",
-      "shipping_method": "Road transport preferred",
-      "packaging_requirements": "Standard retail packaging with tamper-proof seals",
-      "certifications_required": "BIS certification",
-      "regulatory_standards": "Compliant with Indian safety and quality standards",
-      "country_of_origin": "India",
-      "quality_inspection_required": "Yes, upon delivery",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_email": "__NEEDS_SENDER_INPUT__",
-      "past_relationship": "None",
-      "evaluation_criteria": "Price, quality, and delivery timeline",
-      "scoring_weights": "Price: 50%, Quality: 30%, Delivery: 20%",
-      "sample_required": "Yes, 2 units of each model",
-      "bid_bond_required": "No",
-      "bid_validity_days": "90 days (industry standard)",
-      "os_preference": "Any OS for premium, Android for mid-range",
-      "software_licenses_included": "Not applicable",
-      "support_sla_hours": "Not applicable",
-      "warranty_years": "1-year brand warranty",
-      "asset_tagging_required": "No",
-      "cybersecurity_standard": "Not applicable",
-      "data_residency_requirement": "Not applicable",
-      "deployment_environment": "Not applicable",
-      "integration_requirements": "Not applicable",
-      "vendor_blacklist_check": "Yes, mandatory",
-      "force_majeure_clause": "Included",
-      "dispute_resolution_mechanism": "Arbitration in Delhi",
-      "governing_law": "Indian Contract Act, 1872",
-      "liquidated_damages": "Up to 10% of total contract value"
-    },
-    "sender_notes": [],
-    "review_decisions": {
-      "os_preference": {
-        "action": "kept",
-        "destination": "tag_list",
-        "reason": "Sender explicitly mentioned OS preferences in extracted values."
-      },
-      "software_licenses_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to retail RFQ and not explicitly requested by sender."
-      },
-      "support_sla_hours": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to retail RFQ and not explicitly requested by sender."
-      },
-      "cybersecurity_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to retail RFQ and not explicitly requested by sender."
-      },
-      "data_residency_requirement": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to retail RFQ and not explicitly requested by sender."
-      },
-      "deployment_environment": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to retail RFQ and not explicitly requested by sender."
-      },
-      "integration_requirements": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Not relevant to retail RFQ and not explicitly requested by sender."
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "unit_price",
-        "vendor_name",
-        "vendor_registration_number",
-        "vendor_category",
-        "vendor_contact_name",
-        "vendor_contact_email"
-      ],
-      "risk_flags": [
-        "Budget/quantity mismatch unlikely but requires confirmation of unit price",
-        "Vendor compliance (blacklist check) must be verified"
-      ]
-    }
-  },
-  "email_07": {
-    "email_meta": {
-      "from_address": "fleet@urbanmove-logistics.com",
-      "to_address": "vehicle.procurement@acmecorp.com",
-      "date_sent": "Tuesday, May 20, 2026 8:30 AM",
-      "subject": "Electric Delivery Vans – Fleet Expansion Bid"
-    },
-    "context": {
-      "domain": "logistics",
-      "request_type": "procurement_bid",
-      "summary": "UrbanMove Logistics is seeking bids for 75 electric delivery vans as part of their green fleet transition, with phased deliveries and a preference for vendors offering a 3-year service contract.",
-      "tone": "formal",
-      "relationship": "unknown"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": "electric delivery vans",
-      "QUANTITIES": "75",
-      "FINANCIAL": "₹18 crore for the full fleet",
-      "DATES": {
-        "bid_deadline": "June 28, 2026",
-        "delivery_phases": {
-          "phase_1": "25 vans by September 30, 2026",
-          "phase_2": "25 vans by November 30, 2026",
-          "phase_3": "25 vans by January 31, 2027"
-        },
-        "transition_deadline": "March 2027"
-      },
-      "LOCATIONS": "Navi Mumbai depot",
-      "CONTACTS": {
-        "name": "Priya Subramaniam",
-        "email": "priya.s@urbanmove-logistics.com",
-        "phone": "+91-22-6891-4430",
-        "company": "UrbanMove Logistics",
-        "department": "Fleet Procurement"
-      },
-      "PREFERENCES": {
-        "brands": [
-          "Tata Ace EV",
-          "Mahindra Treo Zor Plus",
-          "or equivalent"
-        ],
-        "features": [
-          "minimum 150km real-world range",
-          "payload capacity of at least 800kg",
-          "sliding side door",
-          "telematics-ready"
-        ],
-        "service_contract": "AMC for 3 years preferred"
-      },
-      "TERMS": {
-        "registration_support": "standard RTO registration support"
-      },
-      "OTHER": null
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "electric delivery vans",
-      "item_description": "Electric delivery vans with a minimum 150km real-world range, payload capacity of at least 800kg, sliding side door, and telematics-ready.",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "75",
-      "unit_of_measure": "units",
-      "brand_preference": "Tata Ace EV, Mahindra Treo Zor Plus, or equivalent",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "₹24,00,000 (₹18 crore ÷ 75 units)",
-      "total_budget": "₹18 crore for the full fleet",
-      "currency": "INR",
-      "incoterms": "DDP (Delivered Duty Paid, standard for domestic logistics)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "30% advance, 70% on delivery",
-      "discount_terms": "Negotiable for bulk orders",
-      "penalty_clause": "1% of total value per week of delay",
-      "rfq_issue_date": "May 20, 2026",
-      "bid_submission_deadline": "June 28, 2026",
-      "delivery_date": "January 31, 2027 (final phase delivery deadline)",
-      "contract_start_date": "July 1, 2026",
-      "contract_end_date": "March 31, 2027 (transition deadline + 1 month buffer)",
-      "lead_time_days": "134 days (May 20, 2026 to September 30, 2026 for first phase)",
-      "delivery_location": "Navi Mumbai depot",
-      "shipping_method": "Road transport (standard for domestic vehicle delivery)",
-      "packaging_requirements": "Standard vehicle transport packaging",
-      "freight_responsibility": "Vendor",
-      "certifications_required": "ISO 9001 (quality management), AIS 140 (automotive telematics compliance)",
-      "regulatory_standards": "CMVR (Central Motor Vehicle Rules) compliance",
-      "country_of_origin": "India",
-      "quality_inspection_required": "Yes, pre-delivery inspection at vendor site",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "Vehicle Manufacturer",
-      "vendor_contact_name": "Priya Subramaniam",
-      "vendor_contact_email": "priya.s@urbanmove-logistics.com",
-      "past_relationship": "None",
-      "evaluation_criteria": "Price, delivery timeline, compliance with specifications, service contract terms",
-      "scoring_weights": "40% price, 30% delivery timeline, 20% compliance, 10% service contract",
-      "sample_required": "Yes, one unit for testing before bulk delivery",
-      "bid_bond_required": "Yes, 2% of total bid value",
-      "bid_validity_days": "90 days (industry standard)",
-      "vehicle_type": "electric delivery vans",
-      "payload_capacity_kg": "800kg",
-      "range_km": "150km real-world range",
-      "charging_infrastructure_required": "No, vendor not responsible for charging infrastructure",
-      "fleet_size": "75",
-      "fuel_type": "electric",
-      "emission_standard": "Zero-emission (electric vehicle)",
-      "driver_training_included": "Yes, basic operational training included",
-      "telematics_required": "yes",
-      "maintenance_contract_included": "__NEEDS_SENDER_INPUT__",
-      "dangerous_goods_declaration": "Not applicable",
-      "customs_broker_name": "Not applicable",
-      "port_of_loading": "Not applicable",
-      "port_of_discharge": "Not applicable",
-      "demurrage_terms": "Not applicable"
-    },
-    "sender_notes": [],
-    "review_decisions": {
-      "maintenance_contract_included": {
-        "action": "renamed_and_kept",
-        "destination": "service_contract_terms",
-        "reason": "Rephrased to align with the sender's stated preference for a 3-year AMC."
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible (₹18 crore for 75 units aligns with market rates for electric delivery vans at ₹24 lakh/unit).",
-      "timeline_assessment": "realistic (phased delivery schedule allows sufficient lead time for production and delivery).",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "model_number",
-        "vendor_name",
-        "vendor_registration_number",
-        "maintenance_contract_included"
-      ],
-      "risk_flags": []
-    }
-  },
-  "email_08": {
-    "email_meta": {
-      "from_address": "purchasing@grandvista-hotels.com",
-      "to_address": "bids@acmecorp.com",
-      "date_sent": "Wednesday, May 21, 2026 1:40 PM",
-      "subject": "Commercial Kitchen Equipment – New Property Opening"
-    },
-    "context": {
-      "domain": "hospitality",
-      "request_type": "rfq",
-      "summary": "GrandVista Hotels is requesting bids for the supply, delivery, installation, and commissioning of commercial kitchen equipment for a new 220-room property in Edinburgh, with a budget of £360,000 and a delivery deadline of September 20, 2026.",
-      "tone": "formal",
-      "relationship": "unknown"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": [
-        "4 heavy-duty combi ovens",
-        "6 commercial induction ranges",
-        "3 walk-in cold rooms (2 chiller, 1 freezer)",
-        "2 industrial dishwashers",
-        "Full prep counter and shelving setup for 3 kitchens",
-        "Exhaust hood systems (supply and install)"
-      ],
-      "QUANTITIES": {
-        "combi_ovens": 4,
-        "induction_ranges": 6,
-        "walk_in_cold_rooms": 3,
-        "industrial_dishwashers": 2
-      },
-      "FINANCIAL": {
-        "budget": "£360,000",
-        "currency": "GBP"
-      },
-      "DATES": {
-        "delivery_and_installation_deadline": "September 20, 2026",
-        "bid_submission_deadline": "June 30, 2026",
-        "property_opening_date": "October 2026"
-      },
-      "LOCATIONS": {
-        "delivery_and_installation_site": "Edinburgh"
-      },
-      "CONTACTS": {
-        "sender_name": "Fiona McAllister",
-        "sender_email": "fiona.mcallister@grandvista-hotels.com",
-        "sender_phone": "+44-131-550-4421",
-        "company_name": "GrandVista Hotels",
-        "department": "Group Purchasing"
-      },
-      "PREFERENCES": {
-        "standards": "UK/CE standards",
-        "vendor_experience": "Vendors who have done similar hotel projects before"
-      },
-      "TERMS": {
-        "scope": "Supply, delivery, installation, commissioning"
-      },
-      "OTHER": null
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "Commercial Kitchen Equipment",
-      "item_description": "Supply, delivery, installation, and commissioning of commercial kitchen equipment for a 220-room hotel property.",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "Multiple items (see extracted_values.QUANTITIES)",
-      "unit_of_measure": "Units",
-      "brand_preference": "No specific brand preference stated",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "__NEEDS_SENDER_INPUT__",
-      "total_budget": "£360,000",
-      "currency": "GBP",
-      "incoterms": "DDP (Delivered Duty Paid, standard for domestic projects)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "50% on order confirmation, 50% upon delivery and installation",
-      "discount_terms": "Negotiable based on volume or early payment",
-      "penalty_clause": "1% of contract value per week of delay, capped at 10%",
-      "rfq_issue_date": "May 21, 2026",
-      "bid_submission_deadline": "June 30, 2026",
-      "delivery_date": "September 20, 2026",
-      "contract_start_date": "July 15, 2026",
-      "contract_end_date": "September 30, 2026",
-      "lead_time_days": "60 days (based on delivery_date - contract_start_date)",
-      "delivery_location": "Edinburgh",
-      "shipping_method": "Road freight (domestic delivery)",
-      "packaging_requirements": "Standard commercial packaging to prevent damage during transit",
-      "freight_responsibility": "Supplier",
-      "certifications_required": "UK/CE standards",
-      "regulatory_standards": "UK/CE standards",
-      "country_of_origin": "No preference stated",
-      "quality_inspection_required": "Yes, upon delivery and installation",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "Commercial kitchen equipment suppliers",
-      "vendor_contact_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_email": "__NEEDS_SENDER_INPUT__",
-      "past_relationship": "No prior relationship stated",
-      "evaluation_criteria": "Price, quality, compliance with standards, and vendor experience",
-      "scoring_weights": "Price: 40%, Quality: 30%, Compliance: 20%, Experience: 10%",
-      "sample_required": "Yes, for key equipment (e.g., combi ovens)",
-      "bid_bond_required": "No",
-      "bid_validity_days": "90 days (industry standard)",
-      "force_majeure_clause": "Standard force majeure clause to be included",
-      "dispute_resolution_mechanism": "Arbitration under UK law",
-      "governing_law": "UK law",
-      "liquidated_damages": "1% of contract value per week of delay, capped at 10%"
-    },
-    "sender_notes": [],
-    "review_decisions": {
-      "os_preference": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "software_licenses_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "support_sla_hours": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "cybersecurity_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "data_residency_requirement": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "deployment_environment": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "integration_requirements": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "vehicle_type": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "payload_capacity_kg": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "range_km": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "charging_infrastructure_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "fleet_size": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "fuel_type": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "emission_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "driver_training_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "telematics_required": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      },
-      "maintenance_contract_included": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Irrelevant to hospitality RFQ as per instruction"
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "unit_price",
-        "vendor_name",
-        "vendor_registration_number",
-        "vendor_contact_name",
-        "vendor_contact_email"
-      ],
-      "risk_flags": []
-    }
-  },
-  "email_09": {
-    "email_meta": {
-      "from_address": "dept.procurement@stategov-edu.in",
-      "to_address": "tenders@acmecorp.com",
-      "date_sent": "Thursday, May 22, 2026 10:20 AM",
-      "subject": "Smart Classroom Equipment – Government Tender – 500 Schools"
-    },
-    "context": {
-      "domain": "education",
-      "request_type": "tender",
-      "summary": "The State Department of School Education is inviting bids for the supply and installation of smart classroom infrastructure across 500 government schools.",
-      "tone": "formal",
-      "relationship": "unknown"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": [
-        "interactive flat panel (75 inch, 4K, Android-based)",
-        "document camera",
-        "ceiling-mounted speaker system",
-        "structured cabling",
-        "power backup (1kVA UPS)",
-        "installation",
-        "teacher training (1 day per school)",
-        "3-year onsite warranty"
-      ],
-      "QUANTITIES": {
-        "schools": 500,
-        "phase_1_schools": 200,
-        "phase_2_schools": 300
-      },
-      "FINANCIAL": {
-        "total_project_value": "₹42 crore",
-        "per_school_value": "₹8.4 lakh",
-        "emd": "₹42 lakhs"
-      },
-      "DATES": {
-        "phase_1_deadline": "October 31, 2026",
-        "phase_2_deadline": "February 28, 2027",
-        "bid_submission_deadline": "June 30, 2026"
-      },
-      "LOCATIONS": {
-        "deployment": "500 government schools in the state"
-      },
-      "CONTACTS": {
-        "name": "R. Venkatesh",
-        "phone": "040-2345-6789",
-        "email": "r.venkatesh@stategov-edu.in",
-        "department": "State Dept. of School Education"
-      },
-      "PREFERENCES": null,
-      "TERMS": {
-        "warranty": "3-year onsite warranty",
-        "emd": "₹42 lakhs"
-      },
-      "OTHER": {
-        "tender_document_location": "state e-procurement portal"
-      }
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "smart classroom infrastructure",
-      "item_description": "Supply and installation of interactive flat panels, document cameras, ceiling-mounted speaker systems, structured cabling, power backup, teacher training, and warranty services.",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "500",
-      "unit_of_measure": "schools",
-      "brand_preference": "__NEEDS_SENDER_INPUT__",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "₹8.4 lakh (derived from ₹42 crore ÷ 500 schools)",
-      "total_budget": "₹42 crore",
-      "currency": "INR",
-      "incoterms": "DDP (domestic delivery standard)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "50% on delivery, 50% after installation (common for government tenders)",
-      "discount_terms": "None specified",
-      "penalty_clause": "1% of contract value per week of delay (industry standard)",
-      "rfq_issue_date": "__NEEDS_SENDER_INPUT__",
-      "bid_submission_deadline": "June 30, 2026",
-      "delivery_date": "February 28, 2027 (aligned with phase 2 deadline)",
-      "contract_start_date": "__NEEDS_SENDER_INPUT__",
-      "contract_end_date": "February 28, 2027 (derived from delivery date)",
-      "lead_time_days": "__NEEDS_SENDER_INPUT__",
-      "delivery_location": "500 government schools in the state",
-      "shipping_method": "Road transport (likely for domestic delivery)",
-      "packaging_requirements": "Standard protective packaging for electronics",
-      "freight_responsibility": "Supplier (aligned with DDP incoterms)",
-      "certifications_required": "ISO 9001 (quality management standard)",
-      "regulatory_standards": "BIS certification for electronics (India-specific)",
-      "country_of_origin": "__NEEDS_SENDER_INPUT__",
-      "quality_inspection_required": "Yes, pre-delivery inspection",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_email": "__NEEDS_SENDER_INPUT__",
-      "past_relationship": "None (relationship unknown)",
-      "evaluation_criteria": "Technical compliance (50%), financial bid (50%)",
-      "scoring_weights": "Technical: 50%, Financial: 50%",
-      "sample_required": "Yes, sample unit of interactive flat panel",
-      "bid_bond_required": "₹42 lakhs",
-      "bid_validity_days": "90 days (industry standard)",
-      "os_preference": "__NEEDS_SENDER_INPUT__",
-      "software_licenses_included": "Yes, for interactive flat panels",
-      "support_sla_hours": "24 hours (industry standard for education IT)",
-      "warranty_years": "3",
-      "asset_tagging_required": "Yes, for all equipment",
-      "cybersecurity_standard": "__NEEDS_SENDER_INPUT__",
-      "data_residency_requirement": "__NEEDS_SENDER_INPUT__",
-      "deployment_environment": "__NEEDS_SENDER_INPUT__",
-      "integration_requirements": "__NEEDS_SENDER_INPUT__",
-      "vendor_blacklist_check": "Yes, mandatory",
-      "force_majeure_clause": "Included (industry standard)",
-      "dispute_resolution_mechanism": "Arbitration under Indian Arbitration Act",
-      "governing_law": "Indian Contract Act",
-      "liquidated_damages": "1% of contract value per week of delay"
-    },
-    "sender_notes": null,
-    "review_decisions": {
-      "os_preference": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Marked as irrelevant to education tender and not explicitly requested by sender."
-      },
-      "cybersecurity_standard": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Marked as irrelevant to education tender and not explicitly requested by sender."
-      },
-      "data_residency_requirement": {
-        "action": "dropped",
-        "destination": "discarded",
-        "reason": "Marked as irrelevant to education tender and not explicitly requested by sender."
-      },
-      "deployment_environment": {
-        "action": "renamed_and_kept",
-        "destination": "deployment_phases",
-        "reason": "Rephrased to 'deployment_phases' to align with the context of phased school deployment."
-      },
-      "integration_requirements": {
-        "action": "renamed_and_kept",
-        "destination": "system_integration_requirements",
-        "reason": "Rephrased to 'system_integration_requirements' to clarify potential IT integration needs."
-      }
-    },
-    "validation": {
-      "budget_feasibility": "feasible",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "brand_preference",
-        "model_number",
-        "rfq_issue_date",
-        "contract_start_date",
-        "lead_time_days",
-        "country_of_origin",
-        "vendor_name",
-        "vendor_registration_number",
-        "vendor_category",
-        "vendor_contact_name",
-        "vendor_contact_email"
-      ],
-      "risk_flags": [
-        "Missing critical fields like ref_number and vendor details",
-        "Potential delays if lead time is not clarified",
-        "Dependency on a single vendor for large-scale deployment"
-      ]
-    }
-  },
-  "email_10": {
-    "email_meta": {
-      "from_address": "deepak.joshi@fastpack-mfg.com",
-      "to_address": "sales@acmecorp.com",
-      "date_sent": "Friday, May 23, 2026 9:05 AM",
-      "subject": "Aluminium Sheets and Coils – Monthly Supply Contract"
-    },
-    "context": {
-      "domain": "manufacturing",
-      "request_type": "procurement_bid",
-      "summary": "The sender is seeking bids for a 12-month supply contract for aluminium sheets and coils, with specific quantities, grades, and delivery schedules.",
-      "tone": "formal",
-      "relationship": "referred"
-    },
-    "extracted_values": {
-      "PRODUCT/SERVICE": [
-        {
-          "name": "Aluminium sheets",
-          "thickness": [
-            "3mm",
-            "5mm"
-          ],
-          "grade": "IS 737",
-          "quantity_per_month": "40 MT"
-        },
-        {
-          "name": "Aluminium coils",
-          "thickness": [
-            "1.5mm",
-            "2mm"
-          ],
-          "grade": "IS 737",
-          "quantity_per_month": "25 MT"
-        }
-      ],
-      "QUANTITIES": {
-        "sheets_per_month": "40 MT",
-        "coils_per_month": "25 MT"
-      },
-      "FINANCIAL": {
-        "target_price_sheets": "₹190 per kg",
-        "target_price_coils": "₹195 per kg"
-      },
-      "DATES": {
-        "first_delivery_date": "July 1, 2026",
-        "monthly_delivery_date": "1st of each month",
-        "bid_submission_deadline": "June 22, 2026",
-        "contract_period": "12 months",
-        "contract_extension_option": "12 months"
-      },
-      "LOCATIONS": {
-        "delivery_address": "Bhiwandi plant, Maharashtra"
-      },
-      "CONTACTS": {
-        "sender_name": "Deepak Joshi",
-        "phone": "+91-98200-31145",
-        "email": "deepak.joshi@fastpack-mfg.com",
-        "company_name": "FastPack Manufacturing Pvt. Ltd.",
-        "department": "Sourcing"
-      },
-      "PREFERENCES": {
-        "material_test_report_required": true,
-        "right_to_reject": true,
-        "plant_visit_option": true
-      },
-      "TERMS": {
-        "payment_terms": "Net 30 (industry standard)",
-        "gst_breakup_required": true,
-        "quality_control_summary_required": true
-      },
-      "OTHER": {}
-    },
-    "tag_list": {
-      "ref_number": "__NEEDS_SENDER_INPUT__",
-      "rfq_id": "__NEEDS_SENDER_INPUT__",
-      "po_number": "__NEEDS_SENDER_INPUT__",
-      "contract_id": "__NEEDS_SENDER_INPUT__",
-      "item_name": "Aluminium sheets and coils",
-      "item_description": "Supply of aluminium sheets (3mm, 5mm) and coils (1.5mm, 2mm) as per IS 737 standards.",
-      "part_number": "__NEEDS_SENDER_INPUT__",
-      "quantity": "780 MT (40 MT sheets + 25 MT coils per month x 12 months)",
-      "unit_of_measure": "MT",
-      "brand_preference": "No specific brand preference",
-      "model_number": "__NEEDS_SENDER_INPUT__",
-      "unit_price": "__NEEDS_SENDER_INPUT__",
-      "total_budget": "__NEEDS_SENDER_INPUT__",
-      "currency": "₹",
-      "incoterms": "DDP (domestic delivery standard)",
-      "payment_terms": "Net 30 (industry standard)",
-      "payment_schedule": "Monthly upon delivery",
-      "discount_terms": "Negotiable based on volume",
-      "penalty_clause": "1% of order value per week of delay",
-      "rfq_issue_date": "May 23, 2026",
-      "bid_submission_deadline": "June 22, 2026",
-      "delivery_date": "July 1, 2026",
-      "contract_start_date": "July 1, 2026",
-      "contract_end_date": "June 30, 2027 (12 months from start date)",
-      "lead_time_days": "30 days (derived from delivery_date and rfq_issue_date)",
-      "delivery_location": "Bhiwandi plant, Maharashtra",
-      "shipping_method": "Road transport (domestic standard)",
-      "packaging_requirements": "Standard industrial packaging to prevent damage during transit",
-      "certifications_required": "Material Test Report",
-      "regulatory_standards": "IS 737",
-      "country_of_origin": "India",
-      "quality_inspection_required": "Yes",
-      "vendor_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_registration_number": "__NEEDS_SENDER_INPUT__",
-      "vendor_category": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_name": "__NEEDS_SENDER_INPUT__",
-      "vendor_contact_email": "__NEEDS_SENDER_INPUT__",
-      "past_relationship": "No prior relationship",
-      "evaluation_criteria": "Price, quality, delivery reliability, and compliance with standards",
-      "scoring_weights": "Price: 40%, Quality: 30%, Delivery: 20%, Compliance: 10%",
-      "sample_required": "Yes, prior to contract finalization",
-      "bid_bond_required": "No",
-      "bid_validity_days": "90 days (industry standard)",
-      "material_grade": "IS 737",
-      "chemical_composition": "__NEEDS_SENDER_INPUT__",
-      "mtr_required": "Yes",
-      "rejection_tolerance_percent": "5%",
-      "batch_size": "Negotiable",
-      "shelf_life": "Not applicable",
-      "storage_conditions": "Dry and covered storage",
-      "hazmat_classification": "Not applicable",
-      "certificate_of_analysis_required": "No",
-      "site_location": "Bhiwandi plant, Maharashtra",
-      "project_phase": "Procurement planning",
-      "structural_specifications": "As per IS 737",
-      "safety_standard": "Standard industrial safety norms",
-      "insurance_required": "Yes, transit insurance",
-      "performance_bond_percent": "5% of contract value",
-      "defect_liability_period": "12 months from delivery",
-      "environmental_clearance_required": "No",
-      "production_capacity_per_month": "__NEEDS_SENDER_INPUT__",
-      "tooling_ownership": "Not applicable",
-      "first_article_inspection": "Yes, prior to mass production",
-      "change_management_process": "Mutually agreed upon in writing",
-      "sub_supplier_approval_required": "Yes",
-      "force_majeure_clause": "Standard industry clause",
-      "dispute_resolution_mechanism": "Arbitration under Indian Arbitration Act",
-      "governing_law": "Indian law",
-      "liquidated_damages": "1% of contract value per week of delay, capped at 10%"
-    },
-    "sender_notes": [
-      "The sender mentioned they are exploring alternatives due to delays with their current vendor.",
-      "The sender stated that the contract has an option to extend for another 12 months at mutually agreed pricing.",
-      "The sender invited the recipient to visit their plant before bidding."
+    "inconsistencies": [],
+    "risk_flags": [
+      "Equivalent model pre-approval status is unclear.",
+      "No supplier details provided, which may delay the RFQ process."
     ],
-    "review_decisions": {
-      "plant_visit_option": {
-        "action": "moved",
-        "destination": "extracted_values.PREFERENCES",
-        "reason": "The plant visit option is a preference and fits better under extracted_values.PREFERENCES."
-      }
-    },
-    "validation": {
-      "budget_feasibility": "unclear",
-      "timeline_assessment": "realistic",
-      "missing_critical_fields": [
-        "ref_number",
-        "rfq_id",
-        "po_number",
-        "contract_id",
-        "part_number",
-        "unit_price",
-        "total_budget",
-        "vendor_name",
-        "vendor_registration_number",
-        "vendor_category",
-        "vendor_contact_name",
-        "vendor_contact_email",
-        "chemical_composition",
-        "production_capacity_per_month"
-      ],
-      "risk_flags": [
-        "Budget/quantity mismatch: Total budget is missing, making feasibility unclear.",
-        "Sole-source dependency risk: Exploring alternatives suggests potential reliance on a single vendor."
-      ]
-    }
+    "summary": "The record is mostly complete but requires input for RFQ identifiers, supplier details, and clarification on equivalent model pre-approval to be fully actionable."
   }
 }
