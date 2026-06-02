@@ -1,0 +1,73 @@
+{
+  "sender": "山本健太 <yamamoto.kenta@suzuki-sekkei.co.jp>",
+  "recipient": "bids@globalparts.com",
+  "date": "2026年5月26日（月曜日）午前10時32分",
+  "subject": "【緊急】6軸アーク溶接ロボット調達依頼",
+  "company": "鈴木設計株式会社",
+  "contact_person": {
+    "name": "山本健太",
+    "position": "調達部長",
+    "email": "yamamoto.kenta@suzuki-sekkei.co.jp",
+    "phone": "052-432-8800（内線312）",
+    "address": "〒460-0008 愛知県名古屋市中区栄3丁目18番1号"
+  },
+  "request_details": {
+    "item": {
+      "name": "6軸アーク溶接ロボット",
+      "model": [
+        "FANUCロボット M-10iA/12",
+        "安川電機 Motoman MA1440",
+        "同等品可"
+      ]
+    },
+    "quantity": 18,
+    "budget": {
+      "amount": 220000000,
+      "currency": "JPY",
+      "tax_included": false,
+      "installation_included": true,
+      "maintenance_contract": {
+        "duration": "3年",
+        "separate_estimate": true
+      }
+    },
+    "delivery_schedule": [
+      {
+        "quantity": 6,
+        "date": "2026年9月15日"
+      },
+      {
+        "quantity": 6,
+        "date": "2026年11月30日"
+      },
+      {
+        "quantity": 6,
+        "date": "2027年1月31日"
+      }
+    ],
+    "technical_specifications": {
+      "protection_rating": "IP67",
+      "repeatability": "±0.05mm以内",
+      "payload_capacity": "10kg以上",
+      "reach": "1,400mm以上",
+      "controller": "EtherNet/IP対応必須"
+    },
+    "compliance": [
+      "労働安全衛生法",
+      "JIS B 8433（産業用ロボット安全規格）",
+      "ISO 10218-1（ロボット及びロボットデバイス安全要件）"
+    ],
+    "bidding_conditions": {
+      "submission_deadline": "2026年6月20日（金）17時00分（日本時間）",
+      "warranty_details": "保証内容・保証期間を必ず明記",
+      "inspection_schedule": {
+        "factory_acceptance_test": "工場受入検査（FAT）",
+        "site_acceptance_test": "現地受入検査（SAT）"
+      },
+      "spare_parts": {
+        "list": "予備部品リスト",
+        "lead_time": "リードタイムを添付"
+      }
+    }
+  }
+}
