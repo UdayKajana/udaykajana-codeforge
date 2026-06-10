@@ -1,0 +1,10 @@
+{
+  "bidder": "株式会社山田商事",
+  "items": [
+    {"name": "製品A", "version": null, "notes": "version missing in email"}
+  ],
+  "quantity": 100,
+  "unit_price": {"amount": null, "currency": null, "note": "price not specified clearly"},
+  "deadline": null,
+  "terms": "支払い条件: 30日後"
+}

@@ -1,0 +1,305 @@
+:root {
+  --bg: #f8fafc;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --muted: #64748b;
+  --a-color: #ea580c;
+  --a-bg: #fff7ed;
+  --a-border: #fed7aa;
+  --b-color: #2563eb;
+  --b-bg: #eff6ff;
+  --b-border: #bfdbfe;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0 }
+
+body {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: #0f172a;
+  font-size: 14px;
+}
+
+header {
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e3a5f;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 49px);
+}
+
+/* ── Sidebar ──────────────────────────────────────── */
+.menu {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid var(--border);
+  padding: 16px 12px;
+  flex-shrink: 0;
+  overflow: auto;
+}
+.menu h3 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding: 0 6px;
+  margin-bottom: 8px;
+}
+.menu ul { list-style: none }
+.menu li {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 2px;
+  transition: background 0.1s;
+}
+.menu li:hover { background: #f1f5f9; color: #0f172a }
+.menu li.active { background: var(--accent); color: #fff }
+
+/* ── Main area ────────────────────────────────────── */
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+/* ── Email panel ──────────────────────────────────── */
+.email-panel {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+}
+.email-panel-header {
+  background: #f1f5f9;
+  padding: 7px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+#email-view {
+  padding: 16px 18px;
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #334155;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+/* ── Pipeline cards ───────────────────────────────── */
+.pipelines {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.pipeline {
+  flex: 1;
+  border-radius: 10px;
+  border: 1.5px solid;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pipeline-a { border-color: var(--a-border); background: var(--a-bg) }
+.pipeline-b { border-color: var(--b-border); background: var(--b-bg) }
+
+.pipeline-header {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-bottom: 1.5px solid;
+}
+.pipeline-header-a { color: var(--a-color); border-color: var(--a-border); background: #fff7ed }
+.pipeline-header-b { color: var(--b-color); border-color: var(--b-border); background: #eff6ff }
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 14px;
+}
+
+/* ── Stage sections ───────────────────────────────── */
+.sec-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin: 14px 0 6px;
+}
+.sec-label:first-child { margin-top: 0 }
+
+.stage-desc {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.stage-desc code {
+  font-family: ui-monospace, monospace;
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 11.5px;
+}
+
+/* ── User input badge ─────────────────────────────── */
+.user-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+.user-input-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #334155;
+}
+.user-input-pill .pill-icon { font-size: 14px }
+
+/* ── Code blocks (highlight.js) ───────────────────── */
+pre { margin: 0 }
+pre code.hljs {
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+/* ── dspy.Suggest info box ────────────────────────── */
+.suggest-box {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-left: 3px solid #22c55e;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: #14532d;
+}
+.suggest-box .suggest-title {
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 7px;
+  color: #166534;
+}
+.suggest-box ul {
+  padding-left: 16px;
+  line-height: 1.7;
+}
+.suggest-box code {
+  font-family: ui-monospace, monospace;
+  background: #dcfce7;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 11.5px;
+}
+
+/* ── Training badge ───────────────────────────────── */
+.training-badge {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 12.5px;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+/* ── Golden examples table ────────────────────────── */
+.golden-table-wrap { margin-bottom: 10px }
+.golden-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+.golden-table th {
+  background: #f1f5f9;
+  padding: 5px 8px;
+  text-align: left;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.golden-table td { padding: 5px 8px; border: 1px solid var(--border); vertical-align: top }
+.ex-idx  { width: 28px; font-weight: 700; color: var(--muted) }
+.ex-email { color: #334155; font-family: ui-monospace, monospace }
+.ex-out  { color: #0f4c81; font-family: ui-monospace, monospace }
+
+/* ── Comparison table ─────────────────────────────── */
+.compare-box {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-left: 3px solid #22c55e;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 10px;
+}
+.cmp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.cmp-table th {
+  background: #dcfce7;
+  padding: 4px 8px;
+  text-align: left;
+  border: 1px solid #86efac;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.cmp-table td { padding: 5px 8px; border: 1px solid #bbf7d0; font-family: ui-monospace, monospace }
+.cmp-field  { font-weight: 700; color: #166534 }
+.cmp-before { color: #991b1b }
+.cmp-after  { color: #14532d; font-weight: 600 }
+.bad  { color: #dc2626 }
+.good { color: #16a34a; font-weight: 600 }
+
+/* ── Error box ────────────────────────────────────── */
+.error-box {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #991b1b;
+}

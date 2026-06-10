@@ -1,0 +1,4 @@
+Flask>=2.1
+openai>=1.0
+# dspy may be an internal or third-party package; include it if available
+dspy

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DSPy Presentation — Extraction Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>DSPy vs Traditional Prompting — Bid Extraction Demo</h1>
+  </header>
+
+  <main class="container">
+    <aside class="menu">
+      <h3>Stages</h3>
+      <ul>
+        <li data-stage="email">1. Sample Email</li>
+        <li data-stage="initialization">2. Initialization</li>
+        <li data-stage="agent">3. Agent</li>
+        <li data-stage="assert">4. Assert &amp; Suggestion</li>
+        <li data-stage="optimizer">5. Optimizer</li>
+        <li data-stage="output">6. Output</li>
+      </ul>
+    </aside>
+
+    <section class="main">
+
+      <!-- shown only on "email" stage -->
+      <section id="email-panel" class="email-panel" style="display:none">
+        <div class="email-panel-header">Sample Email</div>
+        <pre id="email-view"></pre>
+      </section>
+
+      <!-- shown on all other stages -->
+      <div id="pipelines-panel" class="pipelines" style="display:none">
+        <section class="pipeline pipeline-a">
+          <div class="pipeline-header pipeline-header-a">Without DSPy</div>
+          <div class="content" id="panel-A"></div>
+        </section>
+        <section class="pipeline pipeline-b">
+          <div class="pipeline-header pipeline-header-b">With DSPy</div>
+          <div class="content" id="panel-B"></div>
+        </section>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+  {
+    "email": "件名: 入札書の提出\n\n会社名: 田中産業株式会社\n担当: 田中一郎\n\n製品: 工業用センサー TypeB\n数量: 50個\n単価: 25000 JPY\n希望納期: 2026/04/15\n支払条件: NET30",
+    "expected": {
+      "bidder": "田中産業株式会社",
+      "items": [{"name": "工業用センサー TypeB", "version": null}],
+      "quantity": 50,
+      "unit_price": {"amount": 25000, "currency": "JPY"},
+      "deadline": "2026-04-15",
+      "terms": "NET30"
+    }
+  },
+  {
+    "email": "前回(2025年6月)のご注文実績：数量100個、単価¥8,000（ご参考）\n\n今回入札:\n会社名: 山本製作所\n製品: 電動バルブ V-200\n数量: 75個\n単価: 9500 JPY\n納期: 2026/05/30",
+    "expected": {
+      "bidder": "山本製作所",
+      "items": [{"name": "電動バルブ V-200", "version": null}],
+      "quantity": 75,
+      "unit_price": {"amount": 9500, "currency": "JPY"},
+      "deadline": "2026-05-30",
+      "terms": null
+    }
+  },
+  {
+    "email": "会社名: 鈴木エレクトロニクス株式会社\n製品: 圧力センサー PS-300\n数量: 120個\n単価: 別途見積もり（価格表参照）\n通貨: JPY\n納期: 2026/06/01\n支払: NET60",
+    "expected": {
+      "bidder": "鈴木エレクトロニクス株式会社",
+      "items": [{"name": "圧力センサー PS-300", "version": null}],
+      "quantity": 120,
+      "unit_price": {"amount": null, "currency": "JPY"},
+      "deadline": "2026-06-01",
+      "terms": "NET60"
+    }
+  },
+  {
+    "email": "会社名: 佐藤機械工業\n製品: 油圧ポンプ HP-500\n数量: 30台\n単価: 45000 JPY\n希望納期: 2026年7月上旬（7月10日目安）\n支払い条件: NET30",
+    "expected": {
+      "bidder": "佐藤機械工業",
+      "items": [{"name": "油圧ポンプ HP-500", "version": null}],
+      "quantity": 30,
+      "unit_price": {"amount": 45000, "currency": "JPY"},
+      "deadline": "2026-07-10",
+      "terms": "NET30"
+    }
+  },
+  {
+    "email": "前回受注実績: 数量200個, 単価3200円（参考）\n\n今回ご発注内容:\n会社名: 渡辺産業株式会社\n品名: LEDライトユニット LU-100\n発注数量: 500個（最小ロット100個、3回分納）\n単価: 3500 JPY/個\n納期: 2026/09/30\n条件: NET45",
+    "expected": {
+      "bidder": "渡辺産業株式会社",
+      "items": [{"name": "LEDライトユニット LU-100", "version": null}],
+      "quantity": 500,
+      "unit_price": {"amount": 3500, "currency": "JPY"},
+      "deadline": "2026-09-30",
+      "terms": "NET45"
+    }
+  }
+]
