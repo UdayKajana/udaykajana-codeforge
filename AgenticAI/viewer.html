@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes Viewer — Quill Preview</title>
+  <!-- Quill -->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+  <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .toolbar {
+      background: #1a73e8;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+    .toolbar h1 { font-size: 1.1rem; font-weight: 600; }
+    .toolbar label { font-size: 0.85rem; opacity: 0.9; }
+    .toolbar input[type="file"] {
+      font-size: 0.82rem;
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn {
+      background: white;
+      color: #1a73e8;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.82rem;
+      cursor: pointer;
+    }
+    .btn:hover { background: #e8f0fe; }
+    .main {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+    .pane {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: white;
+      margin: 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.12);
+    }
+    .pane-header {
+      padding: 8px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: #f8f9fa;
+      border-bottom: 1px solid #dadce0;
+      color: #5f6368;
+      flex-shrink: 0;
+    }
+    #editor-container {
+      flex: 1;
+      overflow: auto;
+    }
+    #html-source {
+      flex: 1;
+      border: none;
+      outline: none;
+      resize: none;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.82rem;
+      padding: 12px;
+      color: #202124;
+      background: #fafafa;
+      overflow: auto;
+    }
+    .ql-container { border: none !important; height: 100%; overflow: auto; }
+    .ql-toolbar { border-bottom: 1px solid #dadce0 !important; border-top: none !important; border-left: none !important; border-right: none !important; }
+  </style>
+</head>
+<body>
+
+<div class="toolbar">
+  <h1>📄 Notes Quill Preview</h1>
+  <label>Load HTML file:</label>
+  <input type="file" id="fileInput" accept=".html" />
+  <button class="btn" onclick="pasteFromClipboard()">Paste HTML</button>
+  <button class="btn" onclick="copyQuillContent()">Copy Rich Text</button>
+</div>
+
+<div class="main">
+  <!-- Quill editor pane -->
+  <div class="pane">
+    <div class="pane-header">Quill Editor Preview</div>
+    <div id="quill-toolbar">
+      <span class="ql-formats">
+        <select class="ql-header"><option value="1"/><option value="2"/><option value="3"/><option selected/></select>
+      </span>
+      <span class="ql-formats">
+        <button class="ql-bold"/><button class="ql-italic"/><button class="ql-underline"/>
+      </span>
+      <span class="ql-formats">
+        <button class="ql-list" value="ordered"/><button class="ql-list" value="bullet"/>
+      </span>
+      <span class="ql-formats">
+        <button class="ql-link"/><button class="ql-clean"/>
+      </span>
+    </div>
+    <div id="editor-container">
+      <div id="quill-editor"></div>
+    </div>
+  </div>
+
+  <!-- HTML source pane -->
+  <div class="pane" style="max-width:420px;">
+    <div class="pane-header">HTML Source</div>
+    <textarea id="html-source" placeholder="Paste your generated HTML here, or load a file above…"></textarea>
+  </div>
+</div>
+
+<script>
+  const quill = new Quill('#quill-editor', {
+    theme: 'snow',
+    modules: { toolbar: '#quill-toolbar' }
+  });
+
+  const sourceEl = document.getElementById('html-source');
+  const fileInput = document.getElementById('fileInput');
+
+  function loadHtml(html) {
+    sourceEl.value = html;
+    quill.clipboard.dangerouslyPasteHTML(html);
+  }
+
+  fileInput.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => loadHtml(ev.target.result);
+    reader.readAsText(file);
+  });
+
+  sourceEl.addEventListener('input', () => {
+    quill.clipboard.dangerouslyPasteHTML(sourceEl.value);
+  });
+
+  async function pasteFromClipboard() {
+    const text = await navigator.clipboard.readText();
+    loadHtml(text);
+  }
+
+  function copyQuillContent() {
+    const html = quill.root.innerHTML;
+    navigator.clipboard.writeText(html).then(() => {
+      alert('Rich text HTML copied to clipboard!');
+    });
+  }
+</script>
+</body>
+</html>
